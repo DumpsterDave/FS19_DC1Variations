@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="selfPropelledSprayer">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Pantera 4502c</name>
+        <specs>
+            <workingWidth>41.0</workingWidth>
+            <power>218</power>
+            <maxSpeed>50</maxSpeed>
+        </specs>
+        <functions>
+            <function>$l10n_function_sprayer</function>
+        </functions>
+        <image>Pantera4502c\store_amazonePantera4502.png</image>
+        <price>245000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>DC1</brand>
+        <category>sprayerVehicles</category>
+        <vertexBufferMemoryUsage>2336284</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>359898</indexBufferMemoryUsage>
+        <textureMemoryUsage>16515416</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_sprayer</typeDesc>
+        <filename>Pantera4502c\amazonePantera4502.i3d</filename>
+        <size width="4" length="10"/>
+        <speedLimit value="15"/>
+        <components>
+            <component centerOfMass="0 1 -0.15" solverIterationCount="10" mass="8500"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0.5 0">
+            <default name="DEFAULT_VEHICLE"/>
+            <turnedOn name="DEFAULT_VEHICLE_ON"/>
+            <selected name="DEFAULT_VEHICLE_SELECTED"/>
+            <turnedOnSelected name="DEFAULT_VEHICLE_SELECTED_ON"/>
+        </schemaOverlay>
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueWheelNarrow" price="0">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="$data/shared/wheels/trelleborg/TM600/520_85R42.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="fenderFrontLeft" driveNode="wheelLeftFront" forcePointRatio="0.4" initialCompression="42" suspTravel="0.2" spring="30" damper="20"/>
+                        <tire isCareWheel="true" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/trelleborg/TM600/520_85R42.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="fenderBackLeft" driveNode="wheelLeftBack" forcePointRatio="0.4" initialCompression="42" suspTravel="0.2" spring="30" damper="20"/>
+                        <tire isCareWheel="true" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/trelleborg/TM600/520_85R42.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="fenderFrontRight" driveNode="wheelFrontRight" forcePointRatio="0.4" initialCompression="42" suspTravel="0.2" spring="30" damper="20"/>
+                        <tire isCareWheel="true" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/trelleborg/TM600/520_85R42.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="fenderBackRight" driveNode="wheelBackRight" forcePointRatio="0.4" initialCompression="42" suspTravel="0.2" spring="30" damper="20"/>
+                        <tire isCareWheel="true" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="20" rotMax="27" rotCenterWheel1="2" rotCenterWheel2="3"/>
+        </ackermannSteeringConfigurations>
+        <hubs>
+            <color0>SHARED_BLACK2</color0>
+            <color1>SHARED_BLACK2</color1>
+            <hub linkNode="wheelLeftFront"  filename="$data/shared/wheels/hubs/hub_n12_6.xml" isLeft="true"  scale="0.385 0.385 0.385" />
+            <hub linkNode="wheelLeftBack" filename="$data/shared/wheels/hubs/hub_n12_6.xml" isLeft="true" scale="0.385 0.385 0.385" />
+            <hub linkNode="wheelFrontRight"   filename="$data/shared/wheels/hubs/hub_n12_6.xml" isLeft="false"  scale="0.385 0.385 0.385" />
+            <hub linkNode="wheelBackRight"  filename="$data/shared/wheels/hubs/hub_n12_6.xml" isLeft="false" scale="0.385 0.385 0.385" />
+        </hubs>
+    </wheels>
+
+    <attachable>
+        <airConsumer usage="500"/>
+    </attachable>
+
+    <attacherJoints>
+        <attacherJoint node="trailerAttacherJoint" jointType="trailer" lowerRotLimit="10 50 50" comboTime="0" allowsJointLimitMovement="false" upperRotRotationOffset="0">
+            <schema position="1 0" rotation="0" invertX="false"/>
+        </attacherJoint>
+        <sounds>
+            <attach template="ATTACH_01" linkNode="0>" />
+        </sounds>
+    </attacherJoints>
+
+    <powerConsumer ptoRpm="400" neededMaxPtoPower="10"/>
+    <lights>
+        <sharedLight linkNode="rearLightOvalOrange_01_02" filename="$data/shared/assets/lights/lizard/rearLightOvalLEDOrange_01_left.xml" />
+        <sharedLight linkNode="rearLightOvalOrange_01_01" filename="$data/shared/assets/lights/lizard/rearLightOvalLEDOrange_01_right.xml" />
+        <sharedLight linkNode="yellowRectangle_01_01" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml" />
+        <sharedLight linkNode="yellowRectangle_01_02" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml" />
+        <sharedLight linkNode="yellowRectangle_01_03" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml" />
+        <sharedLight linkNode="yellowRectangle_01_04" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml" />
+        <sharedLight linkNode="redRound_01_01" filename="$data/shared/assets/reflectors/lizard/redRound_01.xml" />
+        <sharedLight linkNode="redRound_01_02" filename="$data/shared/assets/reflectors/lizard/redRound_01.xml" />
+        <sharedLight linkNode="sideMarker_04Left" filename="$data/shared/assets/lights/lizard/sideMarker_04_left.xml" />
+        <sharedLight linkNode="sideMarker_04Right" filename="$data/shared/assets/lights/lizard/sideMarker_04_right.xml" />
+        <sharedLight linkNode="rearLight37_left" filename="Pantera4502c/lights/rearLight37_left.xml" />
+        <sharedLight linkNode="rearLight37_right" filename="Pantera4502c/lights/rearLight37_right.xml" />
+        <states>
+            <state lightTypes="0"/>
+            <state lightTypes="0 1"/>
+        </states>
+        <realLights>
+            <low>
+                <light node="frontLightLow" lightTypes="0"/>
+                <light node="highBeamLow" lightTypes="3"/>
+                <light node="workLightLow" lightTypes="1"/>
+            </low>
+            <high>
+                <light node="frontLightHigh" lightTypes="0"/>
+                <light node="highBeamHigh" lightTypes="3"/>
+                <light node="workLightHigh" lightTypes="1"/>
+                <light node="backLightsHigh" lightTypes="0"/>
+                <turnLightLeft node="turnLightLeft"/>
+                <turnLightRight node="turnLightRight"/>
+                <brakeLight node="backLightsHigh"/>
+                <reverseLight node="reverseLightHigh"/>
+            </high>
+        </realLights>
+
+        <defaultLights>
+            <defaultLight shaderNode="frontlightStatic"           lightTypes="0 3" />
+            <defaultLight shaderNode="worklightFrontStatic"       lightTypes="1"/>
+        </defaultLights>
+
+        <beaconLights>
+            <beaconLight node="beaconLights1" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml"/>
+            <beaconLight node="beaconLights2" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml"/>
+        </beaconLights>
+
+        <sounds>
+            <switchLight template="SWITCH_01"  />
+            <turnLight template="SWITCH_TURNLIGHT" />
+        </sounds>
+    </lights>
+
+    <workAreas>
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight"/>
+        </workArea>
+    </workAreas>
+
+    <sprayer>
+        <usageScales workingWidth="41.0" scale="1"/>
+        <effects>
+            <effectNode effectNode="effectMiddle" materialType="sprayer" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="arm1LeftParticles" materialType="sprayer" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="arm2LeftParticles" materialType="sprayer" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="arm3LeftParticles" materialType="sprayer" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="arm4LeftParticles" materialType="sprayer" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="arm1RightParticles" materialType="sprayer" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="arm2RightParticles" materialType="sprayer" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="arm3RightParticles" materialType="sprayer" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="arm4RightParticles" materialType="sprayer" materialTypeId="1" delay="0"/>
+        </effects>
+    </sprayer>
+
+    <enterable>
+        <exitPoint node="exitPoint"/>
+        <enterReferenceNode node="amazonePantera4502_main_component1"/>
+        <enterAnimation name="enterAnimation"/>
+        <characterNode node="player_skin" cameraMinDistance="1.5" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="player_rightFoot"/>
+            <target ikChain="leftFoot" targetNode="player_leftFoot"/>
+            <target ikChain="rightArm" targetNode="player_rightHand" poseId="wideFingers"/>
+            <target ikChain="leftArm" targetNode="player_leftHand"/>
+        </characterNode>
+        <cameras>
+            <camera node="outdoorCamera" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="5.5" transMax="35">
+                <raycastNode node="cameraRaycastNode1"/>
+                <raycastNode node="cameraRaycastNode2"/>
+            </camera>
+            <camera node="indoorCamera" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" shadowFocusBox="shadowFocusBox"/>
+        </cameras>
+        <mirrors>
+            <mirror node="mirror1Decal" prio="1"/>
+            <mirror node="mirror2Decal" prio="2"/>
+            <mirror node="mirror3Decal" prio="2"/>
+            <mirror node="mirror4Decal" prio="1"/>
+        </mirrors>
+    </enterable>
+
+    <motorized>
+      <consumerConfigurations>
+          <consumerConfiguration>
+              <consumer fillUnitIndex="2" usage="66" fillType="diesel" />   <!-- usage is per hour at max load and max rpm -->
+          </consumerConfiguration>
+      </consumerConfigurations>
+        <motorConfigurations>
+            <motorConfiguration>
+                <motor torqueScale="0.9235" minRpm="850" maxRpm="2200" maxForwardSpeed="53" maxBackwardSpeed="20" brakeForce="9" lowBrakeForceScale="0.22" lowBrakeForceSpeedLimit="1">
+                    <torque normRpm="0.45" torque="0.9"/>
+                    <torque normRpm="0.5" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.72"/>
+                </motor>
+                <transmission minForwardGearRatio="15.3" maxForwardGearRatio="150" minBackwardGearRatio="42" maxBackwardGearRatio="150"/>
+            </motorConfiguration>
+        </motorConfigurations>
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.1" wheelIndex1="1" wheelIndex2="2"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.1" wheelIndex1="3" wheelIndex2="4"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.8" differentialIndex1="1" differentialIndex2="2"/>
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+        <exhaustEffects>
+            <exhaustEffect node="exhaustParticles" filename="$data/particleSystems/shared/exhaust.i3d" minRpmColor="0.9 0.9 0.9 0.1" maxRpmColor="0.9 0.9 0.9 0.4" minRpmScale="0.1" maxRpmScale="0.55" xzRotationsOffset="0 0" xzRotationsForward="-20 0" xzRotationsBackward="150 0" xzRotationsLeft="0 -150" xzRotationsRight="0 150"/>
+        </exhaustEffects>
+        <motorStartDuration>2700</motorStartDuration>
+        <sounds externalSoundFile="Pantera4502c/sounds/amazone_pantera.xml" />
+
+        <dashboards>
+            <dashboard displayType="ANIMATION" valueType="speedDir" animName="joystickMovement" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ANIMATION" valueType="rpm" animName="rpmDisplay"  minValueAnim="0" maxValueAnim="2300" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ANIMATION" valueType="speed" animName="tempDisplay"  minValueAnim="0" maxValueAnim="50" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </motorized>
+
+    <drivable>
+      <sounds>
+          <waterSplash template="WATER_SPLASH_01" />
+      </sounds>
+        <steeringWheel node="steeringWheel" indoorRotation="540" outdoorRotation="20"/>
+    </drivable>
+
+    <foldable>
+        <foldingParts startMoveDirection="0" turnOnFoldMinLimit="0.99" turnOnFoldMaxLimit="1">
+            <foldingPart animationName="rightFold" speedScale="0.7"/>
+            <foldingPart animationName="leftFold" speedScale="0.69"/>
+        </foldingParts>
+    </foldable>
+
+    <animations>
+        <animation name="leftFold">
+            <part node="arm1Left" startTime="0" endTime="5" startRot="0 -90 0" endRot="0 0 0"/>
+            <part node="lockLeft" startTime="3.5" endTime="4" startRot="0 0 0" endRot="0 0 115"/>
+            <part node="arm2Left" startTime="4.5" endTime="8.5" startRot="0 179.7 0" endRot="0 0 0"/>
+            <part node="arm3Left" startTime="8" endTime="12" startRot="0 -180 0" endRot="0 0 0"/>
+            <part node="arm4Left" startTime="11.5" endTime="15.5" startRot="0 180 0" endRot="0 0 0"/>
+            <part node="armMain" startTime="4" endTime="8" direction="-1" startRot="0 0 0" endRot="0 0 0"/>
+        </animation>
+        <animation name="rightFold">
+            <part node="arm1Right" startTime="0" endTime="5" startRot="0 90 0" endRot="0 0 0"/>
+            <part node="lockLeftX" startTime="3.5" endTime="4" startRot="0 0 0" endRot="0 0 -115"/>
+            <part node="arm2Right" startTime="4.5" endTime="8.5" startRot="0 -179.7 0" endRot="0 0 0"/>
+            <part node="arm3Right" startTime="8" endTime="12" startRot="0 180 0" endRot="0 0 0"/>
+            <part node="arm4Right" startTime="11.5" endTime="15.5" startRot="0 -180 0" endRot="0 0 0"/>
+        </animation>
+        <animation name="tempDisplay">
+            <part node="speedDecal" startTime="0" endTime="1" startRot="0 0 0" endRot="0 -131 0"/>
+        </animation>
+        <animation name="rpmDisplay">
+            <part node="rpmDecal" startTime="0" endTime="1" startRot="0 0 0" endRot="0 -155 0"/>
+        </animation>
+        <animation name="fuelDisplay">
+            <part node="fuelLevelDecal" startTime="0" endTime="1" startScale="1 1 0" endScale="1 1 1"/>
+        </animation>
+        <animation name="fillLevelDisplay">
+            <part node="fillLevelDecal" startTime="0" endTime="1" startScale="1 1 0" endScale="1 1 1"/>
+        </animation>
+        <animation name="enterAnimation">
+            <part node="ladder" startTime="0" duration="1" startRot="0 0 0" endRot="0 0 -99"/>
+        </animation>
+        <animation name="joystickMovement">
+            <part node="joystick" startTime="0"    endTime="1" startRot="-12 0 0"  endRot="12 0 0" />
+        </animation>
+        <animation name="axis">
+            <part node="frameLeft" startTime="0"    endTime="1" startTrans="0 1.199 -0.143"  endTrans="0.225 1.199 -0.143" />
+            <part node="frameRight" startTime="0"    endTime="1" startTrans="0 1.199 -0.143"  endTrans="-0.225 1.199 -0.143" />
+        </animation>
+        <animation name="wiperFrontAnimation">
+            <part node="wiperFront" startTime="0" endTime="1" startRot="0 0 0" endRot="0 360 0" />
+        </animation>
+    </animations>
+
+    <wipers>
+        <wiper animName="wiperFrontAnimation" >
+            <state animSpeed="0.75" animPause="2.0" />
+            <state animSpeed="0.75" animPause="0.0" />
+            <state animSpeed="1.10" animPause="0.0" />
+        </wiper>
+    </wipers>
+
+    <suspensions>
+        <suspension node="seat"              weight="150" minTranslation="-0.05 -0.15 0.0" maxTranslation="0.05 0.15 0.0" suspensionParametersX="20 4" suspensionParametersY="5 1" suspensionParametersZ="20 4" />
+        <suspension useCharacterTorso="true" weight="90" minRotation="0 -5 -5" maxRotation="0 5 5" suspensionParametersY="7 1" suspensionParametersZ="7 1" />
+    </suspensions>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="armMain" playSound="true" foldMinLimit="0.7" foldMaxLimit="1">
+                <controls axis="AXIS_SPRAYER_ARM" invertAxis="false" mouseSpeedFactor="1.2" iconName="SPRAYER_ARM_TRANSLATE_Y"/>
+                <rotation rotSpeed="10" rotAcceleration="80" rotMax="0" rotMin="-74" rotationAxis="1"/>
+                <dependentPart node="armMiddle"/>
+                <dependentPart node="hydraulicArmMainLeft"/>
+                <dependentPart node="hydraulicArmMainRight"/>
+            </movingTool>
+            <movingTool node="frameLeft" playSound="true" wheelIndices="1 2">
+                <controls axis="AXIS_WHEEL_BASE" invertAxis="false" mouseSpeedFactor="0.7" iconName="WHEEL_BASE_TRANSLATE_X"/>
+                <animation animSpeed="0.3" animAcceleration="5" animName="axis" />
+                <dependentPart node="hydraulicFrameFrontLeft"/>
+                <dependentPart node="hydraulicFrameBackLeft"/>
+                <dependentPart node="hydraulicFrameFrontRight"/>
+                <dependentPart node="hydraulicFrameBackRight"/>
+            </movingTool>
+            <movingTool node="arm1Left" playSound="true">
+                <dependentPart node="hydraulicArm1Left"/>
+            </movingTool>
+            <movingTool node="arm2Left" playSound="true">
+                <dependentPart node="movePartArm2Left"/>
+            </movingTool>
+            <movingTool node="arm3Left" playSound="true">
+                <dependentPart node="movePartArm3Left"/>
+            </movingTool>
+            <movingTool node="arm4Left" playSound="true">
+                <dependentPart node="movePartArm4Left"/>
+            </movingTool>
+            <movingTool node="arm1Right" playSound="true">
+                <dependentPart node="hydraulicArm1Right"/>
+            </movingTool>
+            <movingTool node="arm2Right" playSound="true">
+                <dependentPart node="movePartArm2Right"/>
+            </movingTool>
+            <movingTool node="arm3Right" playSound="true">
+                <dependentPart node="movePartArm3Right"/>
+            </movingTool>
+            <movingTool node="arm4Right" playSound="true">
+                <dependentPart node="movePartArm4Right"/>
+            </movingTool>
+        </movingTools>
+        <movingParts>
+            <movingPart node="armMiddle" referencePoint="armMiddleRef" localReferencePoint="armMiddlePart" referenceFrame="armMiddleRef">
+                <dependentPart node="armMiddlePart"/>
+            </movingPart>
+            <movingPart node="armMiddlePart" referencePoint="armMiddleRef" referenceFrame="amazonePantera4502_main_component1"/>
+            <movingPart node="hydraulicArmMainLeft" referencePoint="hydraulicArmLeft" referenceFrame="hydraulicArmLeft">
+                <translatingPart node="hydraulicArmMainLeftPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicArmMainRight" referencePoint="hydraulicArmRight" referenceFrame="hydraulicArmRight">
+                <translatingPart node="hydraulicArmMainRightPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicArm1Left" referencePoint="hydraulicArm1LeftRef" referenceFrame="hydraulicArm1LeftRef">
+                <translatingPart node="hydraulicArm1LeftPunch"/>
+            </movingPart>
+            <movingPart node="movePartArm2Left" referencePoint="movePartArm2LeftRef" localReferencePoint="movePart2Arm2Left" referenceFrame="movePartArm2LeftRefFrame">
+                <dependentPart node="movePart2Arm2Left"/>
+                <dependentPart node="hydraulicArm2Left"/>
+            </movingPart>
+            <movingPart node="movePart2Arm2Left" referencePoint="movePartArm2LeftRef" referenceFrame="movePartArm2LeftRef"/>
+            <movingPart node="hydraulicArm2Left" referencePoint="hydraulicArm2LeftRef" referenceFrame="hydraulicArm2LeftRef">
+                <translatingPart node="hydraulicArm2LeftPunch"/>
+            </movingPart>
+            <movingPart node="movePartArm3Left" referencePoint="movePartArm3LeftRef" localReferencePoint="movePart2Arm3Left" referenceFrame="movePartArm3LeftRefFrame">
+                <dependentPart node="movePart2Arm3Left"/>
+                <dependentPart node="hydraulicArm3Left"/>
+            </movingPart>
+            <movingPart node="movePart2Arm3Left" referencePoint="movePartArm3LeftRef" referenceFrame="movePartArm3LeftRef"/>
+            <movingPart node="hydraulicArm3Left" referencePoint="hydraulicArm3LeftRef" referenceFrame="hydraulicArm3LeftRef">
+                <translatingPart node="hydraulicArm3LeftPunch"/>
+            </movingPart>
+            <movingPart node="movePartArm4Left" referencePoint="movePartArm4LeftRef" localReferencePoint="move2PartArm4Left" referenceFrame="movePartArm4LeftRefFrame">
+                <dependentPart node="move2PartArm4Left"/>
+                <dependentPart node="hydraulicMovePartArm4Left"/>
+            </movingPart>
+            <movingPart node="move2PartArm4Left" referencePoint="movePartArm4LeftRef" referenceFrame="movePartArm4LeftRef"/>
+            <movingPart node="hydraulicMovePartArm4Left" referencePoint="hydraulicMovePartArm4LeftRef" referenceFrame="hydraulicMovePartArm4LeftRef">
+                <translatingPart node="hydraulicMovePartArm4LeftPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicArm1Right" referencePoint="hydraulicArm1RightRef" referenceFrame="hydraulicArm1RightRef">
+                <translatingPart node="hydraulicArm1RightPunch"/>
+            </movingPart>
+            <movingPart node="movePartArm2Right" referencePoint="movePartArm2RightRef" localReferencePoint="movePart2Arm2Right" referenceFrame="movePartArm2RightRefFrame">
+                <dependentPart node="movePart2Arm2Right"/>
+                <dependentPart node="hydraulicArm2Right"/>
+            </movingPart>
+            <movingPart node="movePart2Arm2Right" referencePoint="movePartArm2RightRef" referenceFrame="movePartArm2RightRef"/>
+            <movingPart node="hydraulicArm2Right" referencePoint="hydraulicArm2RightRef" referenceFrame="hydraulicArm2RightRef">
+                <translatingPart node="hydraulicArm2RightPunch"/>
+            </movingPart>
+            <movingPart node="movePartArm3Right" referencePoint="movePartArm3RightRef" localReferencePoint="movePart2Arm3Right" referenceFrame="movePartArm3RightRefFrame">
+                <dependentPart node="movePart2Arm3Right"/>
+                <dependentPart node="hydraulicArm3Right"/>
+            </movingPart>
+            <movingPart node="movePart2Arm3Right" referencePoint="movePartArm3RightRef" referenceFrame="movePartArm3RightRef"/>
+            <movingPart node="hydraulicArm3Right" referencePoint="hydraulicArm3RightRef" referenceFrame="hydraulicArm3RightRef">
+                <translatingPart node="hydraulicArm3RightPunch"/>
+            </movingPart>
+            <movingPart node="movePartArm4Right" referencePoint="movePartArm4RightRef" localReferencePoint="move2PartArm4Right" referenceFrame="movePartArm4RightRefFrame">
+                <dependentPart node="move2PartArm4Right"/>
+                <dependentPart node="hydraulicMovePartArm4Right"/>
+            </movingPart>
+            <movingPart node="move2PartArm4Right" referencePoint="movePartArm4RightRef" referenceFrame="movePartArm4RightRef"/>
+            <movingPart node="hydraulicMovePartArm4Right" referencePoint="hydraulicMovePartArm4RightRef" referenceFrame="hydraulicMovePartArm4RightRef">
+                <translatingPart node="hydraulicMovePartArm4RightPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicFrameFrontLeft" referencePoint="hydraulicFrameFrontLeftRef" referenceFrame="hydraulicFrameFrontLeftRef">
+                <translatingPart node="hydraulicFrameFrontLeftPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicFrameBackLeft" referencePoint="hydraulicFrameBackLeftRef" referenceFrame="hydraulicFrameBackLeftRef">
+                <translatingPart node="hydraulicFrameBackLeftPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicFrameFrontRight" referencePoint="hydraulicFrameFrontRightRef" referenceFrame="hydraulicFrameFrontRightRef">
+                <translatingPart node="hydraulicFrameFrontRightPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicFrameBackRight" referencePoint="hydraulicFrameBackRightRef" referenceFrame="hydraulicFrameBackRightRef">
+                <translatingPart node="hydraulicFrameBackRightPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicSteeringFrontLeft" referencePoint="hydraulicSteeringFrontLeftRef" referenceFrame="amazonePantera4502_main_component1" isActiveDirty="true" playSound="false">
+                <translatingPart node="hydraulicSteeringFrontLeftPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicSteeringBackLeft" referencePoint="hydraulicSteeringBackLeftRef" referenceFrame="amazonePantera4502_main_component1" isActiveDirty="true" playSound="false">
+                <translatingPart node="hydraulicSteeringBackLeftPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicSteeringFrontRight" referencePoint="hydraulicSteeringFrontRightRef" referenceFrame="amazonePantera4502_main_component1" isActiveDirty="true" playSound="false">
+                <translatingPart node="hydraulicSteeringFrontRightPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicSteeringBackRight" referencePoint="hydraulicSteeringBackRightRef" referenceFrame="amazonePantera4502_main_component1" isActiveDirty="true" playSound="false">
+                <translatingPart node="hydraulicSteeringBackRightPunch"/>
+            </movingPart>
+        </movingParts>
+        <sounds>
+            <hydraulic template="DEFAULT_HYDRAULIC_SOUND" />
+        </sounds>
+    </cylindered>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading width="11" offset="0 0 0" />
+                    <fillUnit unit="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="4500">
+                      <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fillLevelDisplay" groups="MOTOR_ACTIVE"/>
+                  </fillUnit>
+                    <fillUnit capacity="230" unit="$l10n_unit_literShort" fillTypes="diesel" showOnHud="false" showInShop="false">
+                      <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fuelDisplay" groups="MOTOR_ACTIVE"/>
+                  </fillUnit>
+                    <fillUnit capacity="2000" unit="$l10n_unit_literShort" fillTypes="air" showOnHud="false" showInShop="false"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <turnOnVehicle turnOffIfNotAllowed="true" >
+        <sounds>
+            <work template="DEFAULT_SPRAYER" pitchOffset="0.75" linkNode="amazonePantera4502_main_component1" />
+        </sounds>
+    </turnOnVehicle>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+
+    <dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE"   isMotorStarting="true" isMotorRunning="true"/>
+        </groups>
+        <default>
+            <dashboard displayType="EMITTER" node="dashboard" idleValue="-1" intensity="0.3" groups="MOTOR_ACTIVE" />
+            <dashboard displayType="EMITTER" node="dashboard1" idleValue="-1" intensity="0.3" groups="MOTOR_ACTIVE" />
+            <dashboard displayType="VISIBILITY" node="dashboards" groups="MOTOR_ACTIVE" />
+        </default>
+    </dashboard>
+
+    <honk>
+        <sound template="HONK_MF_BIG_TRACTOR"  />
+    </honk>
+
+    <ai>
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack"/>
+        <sizeMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack"/>
+        <collisionTrigger node="trafficCollisionTrigger"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.5" maxX="1.5" minZ="-3.2" maxZ="2.7" yOffset="0.65" />
+        <bendingNode minX="-1.5" maxX="1.5" minZ="2.6" maxZ="3.9" yOffset="1.1" />
+        <bendingNode minX="0" maxX="5.6" minZ="0" maxZ="0.3" yOffset="-0.1" node="arm1LeftFoliageBending" />
+        <bendingNode minX="0" maxX="5.6" minZ="0" maxZ="0.3" yOffset="-0.1" node="arm2Left" />
+        <bendingNode minX="0" maxX="4.5" minZ="-0.3" maxZ="0.1" yOffset="-0.1" node="arm3Left" />
+        <bendingNode minX="0" maxX="4.3" minZ="0" maxZ="0.3" yOffset="-0.1" node="arm4Left" />
+        <bendingNode minX="0" maxX="-5.6" minZ="0" maxZ="0.3" yOffset="-0.1" node="arm1RightFoliageBending" />
+        <bendingNode minX="5.8" maxX="0" minZ="0.2" maxZ="-0.5" yOffset="-0.1" node="arm2Right" />
+        <bendingNode minX="0.2" maxX="-4.8" minZ="0.4" maxZ="-0.4" yOffset="-0.1" node="arm3Right" />
+        <bendingNode minX="0.2" maxX="-4.5" minZ="0.5" maxZ="-0.3" yOffset="-0.1" node="arm4Right" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="amazonePantera4502_mat" baseNode="amazone_vis">
+            <shaderParameter name="colorMat1" value="AMAZONE_GREEN1"/>
+            <shaderParameter name="colorMat2" value="0.05 0.05 0.05 1"/>
+            <shaderParameter name="colorMat3" value="AMAZONE_ORANGE1"/>
+        </material>
+    </baseMaterial>
+
+    <baseMaterialConfigurations price="2000" useDefaultColors="true">
+        <baseMaterialConfiguration color="AMAZONE_GREEN1"/>
+        <baseMaterialConfiguration name="WHITE MATTE" color="SHARED_WHITE2" material="1" price="3000"/>
+        <baseMaterialConfiguration name="TAN MATTE" color="KRONE_YELLOW1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="BLACK MATTE" color="SHARED_BLACK2" material="1" price="3000"/>
+        <baseMaterialConfiguration name="RED MATTE" color="CASEIH_RED1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="BLUE MATTE" color="NEWHOLLAND_BLUE1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="GREEN MATTE" color="JOHNDEERE_GREEN1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="OLIVE MATTE" color="0.07819 0.12214 0.02122 1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="BROWN MATTE" color="0.16827 0.06663 0.0319 1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="3000"/>
+        <material name="amazonePantera4502_mat" shaderParameter="colorMat1"/>
+    </baseMaterialConfigurations>
+
+    <designMaterialConfigurations price="1000" useDefaultColors="true">
+        <designMaterialConfiguration color="AMAZONE_ORANGE1"/>
+        <designMaterialConfiguration name="WHITE MATTE" color="SHARED_WHITE2" material="1" price="1500"/>
+        <designMaterialConfiguration name="TAN MATTE" color="KRONE_YELLOW1" material="1" price="1500"/>
+        <designMaterialConfiguration name="BLACK MATTE" color="SHARED_BLACK2" material="1" price="1500"/>
+        <designMaterialConfiguration name="RED MATTE" color="CASEIH_RED1" material="1" price="1500"/>
+        <designMaterialConfiguration name="BLUE MATTE" color="NEWHOLLAND_BLUE1" material="1" price="1500"/>
+        <designMaterialConfiguration name="GREEN MATTE" color="JOHNDEERE_GREEN1" material="1" price="1500"/>
+        <designMaterialConfiguration name="OLIVE MATTE" color="0.07819 0.12214 0.02122 1" material="1" price="1500"/>
+        <designMaterialConfiguration name="BROWN MATTE" color="0.16827 0.06663 0.0319 1" material="1" price="1500"/>
+        <designMaterialConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="1500"/>
+        <designMaterialConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="1500"/>
+        <material name="amazonePantera4502_mat" shaderParameter="colorMat3"/>
+    </designMaterialConfigurations>
+
+    <rimColorConfigurations useDefaultColors="true" price="500">
+        <rimColorConfiguration color="0.35 0.35 0.35 1"/>
+        <rimColorConfiguration name="WHITE MATTE" color="SHARED_WHITE2" material="1" price="750"/>
+        <rimColorConfiguration name="TAN MATTE" color="KRONE_YELLOW1" material="1" price="750"/>
+        <rimColorConfiguration name="BLACK MATTE" color="SHARED_BLACK2" material="1" price="750"/>
+        <rimColorConfiguration name="RED MATTE" color="CASEIH_RED1" material="1" price="750"/>
+        <rimColorConfiguration name="BLUE MATTE" color="NEWHOLLAND_BLUE1" material="1" price="750"/>
+        <rimColorConfiguration name="GREEN MATTE" color="JOHNDEERE_GREEN1" material="1" price="750"/>
+        <rimColorConfiguration name="OLIVE MATTE" color="0.07819 0.12214 0.02122 1" material="1" price="750"/>
+        <rimColorConfiguration name="BROWN MATTE" color="0.16827 0.06663 0.0319 1" material="1" price="750"/>
+        <rimColorConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="750"/>
+        <rimColorConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="750"/>
+    </rimColorConfigurations>
+
+    <i3dMappings>
+        <i3dMapping id="amazonePantera4502_main_component1" node="0>" />
+        <i3dMapping id="amazone_vis" node="0>0" />
+        <i3dMapping id="frameLeft" node="0>0|0|0" />
+        <i3dMapping id="fenderFrontLeft" node="0>0|0|0|0|0" />
+        <i3dMapping id="wheelLeftFront" node="0>0|0|0|0|0|0|0" />
+        <i3dMapping id="hydraulicSteeringFrontLeftRef" node="0>0|0|0|0|0|1" />
+        <i3dMapping id="fenderBackLeft" node="0>0|0|0|1|0" />
+        <i3dMapping id="wheelLeftBack" node="0>0|0|0|1|0|0|0" />
+        <i3dMapping id="hydraulicSteeringBackLeftRef" node="0>0|0|0|1|0|1" />
+        <i3dMapping id="hydraulicSteeringFrontLeft" node="0>0|0|0|2" />
+        <i3dMapping id="hydraulicSteeringFrontLeftPunch" node="0>0|0|0|2|0" />
+        <i3dMapping id="hydraulicSteeringBackLeft" node="0>0|0|0|3" />
+        <i3dMapping id="hydraulicSteeringBackLeftPunch" node="0>0|0|0|3|0" />
+        <i3dMapping id="hydraulicFrameFrontLeftRef" node="0>0|0|0|4" />
+        <i3dMapping id="hydraulicFrameBackLeftRef" node="0>0|0|0|5" />
+        <i3dMapping id="frameRight" node="0>0|0|1" />
+        <i3dMapping id="fenderFrontRight" node="0>0|0|1|0|0" />
+        <i3dMapping id="wheelFrontRight" node="0>0|0|1|0|0|0|0" />
+        <i3dMapping id="hydraulicSteeringFrontRightRef" node="0>0|0|1|0|0|1" />
+        <i3dMapping id="fenderBackRight" node="0>0|0|1|1|0" />
+        <i3dMapping id="wheelBackRight" node="0>0|0|1|1|0|0|0" />
+        <i3dMapping id="hydraulicSteeringBackRightRef" node="0>0|0|1|1|0|1" />
+        <i3dMapping id="hydraulicSteeringFrontRight" node="0>0|0|1|2" />
+        <i3dMapping id="hydraulicSteeringFrontRightPunch" node="0>0|0|1|2|0" />
+        <i3dMapping id="hydraulicSteeringBackRight" node="0>0|0|1|3" />
+        <i3dMapping id="hydraulicSteeringBackRightPunch" node="0>0|0|1|3|0" />
+        <i3dMapping id="hydraulicFrameFrontRightRef" node="0>0|0|1|4" />
+        <i3dMapping id="hydraulicFrameBackRightRef" node="0>0|0|1|5" />
+        <i3dMapping id="rearLightOvalOrange_01_02" node="0>0|1|0|0" />
+        <i3dMapping id="rearLightOvalOrange_01_01" node="0>0|1|0|1" />
+        <i3dMapping id="yellowRectangle_01_04" node="0>0|1|0|2" />
+        <i3dMapping id="yellowRectangle_01_03" node="0>0|1|0|3" />
+        <i3dMapping id="yellowRectangle_01_02" node="0>0|1|0|4" />
+        <i3dMapping id="yellowRectangle_01_01" node="0>0|1|0|5" />
+        <i3dMapping id="redRound_01_02" node="0>0|1|0|6" />
+        <i3dMapping id="redRound_01_01" node="0>0|1|0|7" />
+        <i3dMapping id="sideMarker_04Right" node="0>0|1|0|8" />
+        <i3dMapping id="sideMarker_04Left" node="0>0|1|0|9" />
+        <i3dMapping id="rearLight37_left" node="0>0|1|0|10" />
+        <i3dMapping id="rearLight37_right" node="0>0|1|0|11" />
+        <i3dMapping id="frontLightLow" node="0>0|1|1|0" />
+        <i3dMapping id="frontLightHigh" node="0>0|1|1|1" />
+        <i3dMapping id="highBeamLow" node="0>0|1|1|2" />
+        <i3dMapping id="highBeamHigh" node="0>0|1|1|3" />
+        <i3dMapping id="backLightsHigh" node="0>0|1|1|4" />
+        <i3dMapping id="workLightLow" node="0>0|1|2|0" />
+        <i3dMapping id="workLightHigh" node="0>0|1|2|1" />
+        <i3dMapping id="turnLightLeft" node="0>0|1|3|0" />
+        <i3dMapping id="turnLightRight" node="0>0|1|3|1" />
+        <i3dMapping id="reverseLightHigh" node="0>0|1|4|0" />
+        <i3dMapping id="beaconLights1" node="0>0|1|5|0" />
+        <i3dMapping id="beaconLights2" node="0>0|1|5|1" />
+        <i3dMapping id="worklightFrontStatic" node="0>0|1|6|1" />
+        <i3dMapping id="frontlightStatic" node="0>0|1|6|2" />
+        <i3dMapping id="outdoorCameraTarget" node="0>0|2|0" />
+        <i3dMapping id="outdoorCamera" node="0>0|2|0|0" />
+        <i3dMapping id="indoorCamera" node="0>0|2|1" />
+        <i3dMapping id="shadowFocusBox" node="0>0|2|2" />
+        <i3dMapping id="cameraRaycastNode1" node="0>0|2|3" />
+        <i3dMapping id="cameraRaycastNode2" node="0>0|2|4" />
+        <i3dMapping id="exitPoint" node="0>0|3" />
+        <i3dMapping id="steeringWheel" node="0>0|4|0" />
+        <i3dMapping id="player_leftHand" node="0>0|4|0|0" />
+        <i3dMapping id="trailerAttacherJoint" node="0>0|5" />
+        <i3dMapping id="player_rightFoot" node="0>0|6|0" />
+        <i3dMapping id="player_leftFoot" node="0>0|6|1" />
+        <i3dMapping id="trafficCollisionTrigger" node="0>0|7" />
+        <i3dMapping id="dashboards" node="0>0|8" />
+        <i3dMapping id="fuelLevelDecal" node="0>0|8|0|0" />
+        <i3dMapping id="fillLevelDecal" node="0>0|8|0|1" />
+        <i3dMapping id="rpmDecal" node="0>0|8|1|0" />
+        <i3dMapping id="speedDecal" node="0>0|8|1|1" />
+        <i3dMapping id="dashboard1" node="0>0|8|3" />
+        <i3dMapping id="mirror1Decal" node="0>0|9|0" />
+        <i3dMapping id="mirror2Decal" node="0>0|9|1" />
+        <i3dMapping id="mirror3Decal" node="0>0|9|2" />
+        <i3dMapping id="mirror4Decal" node="0>0|9|3" />
+        <i3dMapping id="exhaustParticles" node="0>0|10" />
+        <i3dMapping id="armMain" node="0>0|11|0" />
+        <i3dMapping id="armMiddle" node="0>0|11|0|0" />
+        <i3dMapping id="arm1Left" node="0>0|11|0|0|0|0|0" />
+        <i3dMapping id="arm2Left" node="0>0|11|0|0|0|0|0|0|0" />
+        <i3dMapping id="arm3Left" node="0>0|11|0|0|0|0|0|0|0|0|0" />
+        <i3dMapping id="arm4Left" node="0>0|11|0|0|0|0|0|0|0|0|0|0|0" />
+        <i3dMapping id="movePartArm4Left" node="0>0|11|0|0|0|0|0|0|0|0|0|0|0|0" />
+        <i3dMapping id="move2PartArm4Left" node="0>0|11|0|0|0|0|0|0|0|0|0|0|0|0|0" />
+        <i3dMapping id="hydraulicMovePartArm4Left" node="0>0|11|0|0|0|0|0|0|0|0|0|0|0|0|1" />
+        <i3dMapping id="hydraulicMovePartArm4LeftPunch" node="0>0|11|0|0|0|0|0|0|0|0|0|0|0|0|1|0" />
+        <i3dMapping id="movePartArm4LeftRefFrame" node="0>0|11|0|0|0|0|0|0|0|0|0|0|0|1" />
+        <i3dMapping id="hydraulicMovePartArm4LeftRef" node="0>0|11|0|0|0|0|0|0|0|0|0|0|0|2" />
+        <i3dMapping id="arm4LeftParticles" node="0>0|11|0|0|0|0|0|0|0|0|0|0|0|3" />
+        <i3dMapping id="movePartArm3LeftRef" node="0>0|11|0|0|0|0|0|0|0|0|0|1" />
+        <i3dMapping id="movePartArm3LeftRefFrame" node="0>0|11|0|0|0|0|0|0|0|0|0|2" />
+        <i3dMapping id="movePartArm4LeftRef" node="0>0|11|0|0|0|0|0|0|0|0|0|3" />
+        <i3dMapping id="arm3LeftParticles" node="0>0|11|0|0|0|0|0|0|0|0|0|4" />
+        <i3dMapping id="movePartArm3Left" node="0>0|11|0|0|0|0|0|0|0|1" />
+        <i3dMapping id="movePart2Arm3Left" node="0>0|11|0|0|0|0|0|0|0|1|0" />
+        <i3dMapping id="hydraulicArm3LeftRef" node="0>0|11|0|0|0|0|0|0|0|1|1" />
+        <i3dMapping id="hydraulicArm3Left" node="0>0|11|0|0|0|0|0|0|0|2" />
+        <i3dMapping id="hydraulicArm3LeftPunch" node="0>0|11|0|0|0|0|0|0|0|2|0" />
+        <i3dMapping id="movePartArm2LeftRef" node="0>0|11|0|0|0|0|0|0|0|3" />
+        <i3dMapping id="movePartArm2LeftRefFrame" node="0>0|11|0|0|0|0|0|0|0|4" />
+        <i3dMapping id="arm2LeftParticles" node="0>0|11|0|0|0|0|0|0|0|5" />
+        <i3dMapping id="lockLeft" node="0>0|11|0|0|0|0|0|1|0" />
+        <i3dMapping id="movePartArm2Left" node="0>0|11|0|0|0|0|0|2" />
+        <i3dMapping id="movePart2Arm2Left" node="0>0|11|0|0|0|0|0|2|0" />
+        <i3dMapping id="hydraulicArm2LeftRef" node="0>0|11|0|0|0|0|0|2|1" />
+        <i3dMapping id="hydraulicArm2Left" node="0>0|11|0|0|0|0|0|3" />
+        <i3dMapping id="hydraulicArm2LeftPunch" node="0>0|11|0|0|0|0|0|3|0" />
+        <i3dMapping id="hydraulicArm1LeftRef" node="0>0|11|0|0|0|0|0|4" />
+        <i3dMapping id="arm1LeftParticles" node="0>0|11|0|0|0|0|0|5" />
+        <i3dMapping id="arm1LeftFoliageBending" node="0>0|11|0|0|0|0|0|6" />
+        <i3dMapping id="arm1Right" node="0>0|11|0|0|0|1|0" />
+        <i3dMapping id="arm2Right" node="0>0|11|0|0|0|1|0|0|0" />
+        <i3dMapping id="arm3Right" node="0>0|11|0|0|0|1|0|0|0|0|0" />
+        <i3dMapping id="arm4Right" node="0>0|11|0|0|0|1|0|0|0|0|0|0|0" />
+        <i3dMapping id="movePartArm4Right" node="0>0|11|0|0|0|1|0|0|0|0|0|0|0|0" />
+        <i3dMapping id="move2PartArm4Right" node="0>0|11|0|0|0|1|0|0|0|0|0|0|0|0|0" />
+        <i3dMapping id="hydraulicMovePartArm4Right" node="0>0|11|0|0|0|1|0|0|0|0|0|0|0|0|1" />
+        <i3dMapping id="hydraulicMovePartArm4RightPunch" node="0>0|11|0|0|0|1|0|0|0|0|0|0|0|0|1|0" />
+        <i3dMapping id="movePartArm4RightRefFrame" node="0>0|11|0|0|0|1|0|0|0|0|0|0|0|1" />
+        <i3dMapping id="hydraulicMovePartArm4RightRef" node="0>0|11|0|0|0|1|0|0|0|0|0|0|0|2" />
+        <i3dMapping id="arm4RightParticles" node="0>0|11|0|0|0|1|0|0|0|0|0|0|0|3" />
+        <i3dMapping id="movePartArm3RightRef" node="0>0|11|0|0|0|1|0|0|0|0|0|1" />
+        <i3dMapping id="movePartArm3RightRefFrame" node="0>0|11|0|0|0|1|0|0|0|0|0|2" />
+        <i3dMapping id="movePartArm4RightRef" node="0>0|11|0|0|0|1|0|0|0|0|0|3" />
+        <i3dMapping id="arm3RightParticles" node="0>0|11|0|0|0|1|0|0|0|0|0|4" />
+        <i3dMapping id="movePartArm3Right" node="0>0|11|0|0|0|1|0|0|0|1" />
+        <i3dMapping id="movePart2Arm3Right" node="0>0|11|0|0|0|1|0|0|0|1|0" />
+        <i3dMapping id="hydraulicArm3RightRef" node="0>0|11|0|0|0|1|0|0|0|1|1" />
+        <i3dMapping id="hydraulicArm3Right" node="0>0|11|0|0|0|1|0|0|0|2" />
+        <i3dMapping id="hydraulicArm3RightPunch" node="0>0|11|0|0|0|1|0|0|0|2|0" />
+        <i3dMapping id="movePartArm2RightRef" node="0>0|11|0|0|0|1|0|0|0|3" />
+        <i3dMapping id="movePartArm2RightRefFrame" node="0>0|11|0|0|0|1|0|0|0|4" />
+        <i3dMapping id="arm2RightParticles" node="0>0|11|0|0|0|1|0|0|0|5" />
+        <i3dMapping id="lockLeftX" node="0>0|11|0|0|0|1|0|1|0" />
+        <i3dMapping id="movePartArm2Right" node="0>0|11|0|0|0|1|0|2" />
+        <i3dMapping id="movePart2Arm2Right" node="0>0|11|0|0|0|1|0|2|0" />
+        <i3dMapping id="hydraulicArm2RightRef" node="0>0|11|0|0|0|1|0|2|1" />
+        <i3dMapping id="hydraulicArm2Right" node="0>0|11|0|0|0|1|0|3" />
+        <i3dMapping id="hydraulicArm2RightPunch" node="0>0|11|0|0|0|1|0|3|0" />
+        <i3dMapping id="hydraulicArm1RightRef" node="0>0|11|0|0|0|1|0|4" />
+        <i3dMapping id="arm1RightParticles" node="0>0|11|0|0|0|1|0|5" />
+        <i3dMapping id="arm1RightFoliageBending" node="0>0|11|0|0|0|1|0|6" />
+        <i3dMapping id="hydraulicArm1Left" node="0>0|11|0|0|0|2" />
+        <i3dMapping id="hydraulicArm1LeftPunch" node="0>0|11|0|0|0|2|0" />
+        <i3dMapping id="hydraulicArm1Right" node="0>0|11|0|0|0|3" />
+        <i3dMapping id="hydraulicArm1RightPunch" node="0>0|11|0|0|0|3|0" />
+        <i3dMapping id="effectMiddle" node="0>0|11|0|0|0|4" />
+        <i3dMapping id="workAreaStart" node="0>0|11|0|0|0|5|0" />
+        <i3dMapping id="workAreaWidth" node="0>0|11|0|0|0|5|1" />
+        <i3dMapping id="workAreaHeight" node="0>0|11|0|0|0|5|2" />
+        <i3dMapping id="aiMarkerLeft" node="0>0|11|0|0|0|5|3" />
+        <i3dMapping id="aiMarkerRight" node="0>0|11|0|0|0|5|4" />
+        <i3dMapping id="aiMarkerBack" node="0>0|11|0|0|0|5|5" />
+        <i3dMapping id="armMiddlePart" node="0>0|11|0|0|1" />
+        <i3dMapping id="hydraulicArmLeft" node="0>0|11|0|1" />
+        <i3dMapping id="hydraulicArmRight" node="0>0|11|0|2" />
+        <i3dMapping id="armMiddleRef" node="0>0|11|1" />
+        <i3dMapping id="hydraulicArmMainLeft" node="0>0|11|2" />
+        <i3dMapping id="hydraulicArmMainLeftPunch" node="0>0|11|2|0" />
+        <i3dMapping id="hydraulicArmMainRight" node="0>0|11|3" />
+        <i3dMapping id="hydraulicArmMainRightPunch" node="0>0|11|3|0" />
+        <i3dMapping id="hydraulicFrameFrontLeft" node="0>0|11|4" />
+        <i3dMapping id="hydraulicFrameFrontLeftPunch" node="0>0|11|4|0" />
+        <i3dMapping id="hydraulicFrameBackLeft" node="0>0|11|5" />
+        <i3dMapping id="hydraulicFrameBackLeftPunch" node="0>0|11|5|0" />
+        <i3dMapping id="hydraulicFrameFrontRight" node="0>0|11|6" />
+        <i3dMapping id="hydraulicFrameFrontRightPunch" node="0>0|11|6|0" />
+        <i3dMapping id="hydraulicFrameBackRight" node="0>0|11|7" />
+        <i3dMapping id="hydraulicFrameBackRightPunch" node="0>0|11|7|0" />
+        <i3dMapping id="ladder" node="0>0|11|8" />
+        <i3dMapping id="seat" node="0>0|12|4" />
+        <i3dMapping id="player_skin" node="0>0|12|4|0" />
+        <i3dMapping id="dashboard" node="0>0|12|4|1" />
+        <i3dMapping id="joystick" node="0>0|12|4|2" />
+        <i3dMapping id="player_rightHand" node="0>0|12|4|2|0" />
+        <i3dMapping id="wiperFront" node="0>0|13|0" />
+    </i3dMappings>
+</vehicle>

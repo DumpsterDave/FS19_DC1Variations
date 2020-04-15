@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Large Bulk Silo Extension" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.2.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="farmSilos_diffuse.dds"/>
+    <File fileId="2" filename="$data/placeables/farmSilos/farmSilos_normal.png"/>
+    <File fileId="3" filename="$data/placeables/farmSilos/farmSilos_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="farmSilos_mat" materialId="267">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="lambert1" materialId="266" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="siloExtension.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="siloExtension" nodeId="271">
+      <Shape shapeId="1" name="siloExtensionVis" static="true" clipDistance="300" nodeId="272" materialIds="267" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="tipBlocker" static="true" collisionMask="524288" clipDistance="600" nodeId="273" materialIds="266" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="clearArea" nodeId="274">
+        <TransformGroup name="start" translation="-6 0 -6" nodeId="275"/>
+        <TransformGroup name="width" translation="6 0 -6" nodeId="276"/>
+        <TransformGroup name="height" translation="-6 0 6" nodeId="277"/>
+      </TransformGroup>
+      <TransformGroup name="storage" nodeId="278"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

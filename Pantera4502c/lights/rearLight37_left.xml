@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<light>
+    <filename>Pantera4502c/lights/rearLight37.i3d</filename>
+    <rootNode node="0" />
+    <defaultLight node="0|4" lightTypes="0" />
+    <brakeLight node="0|5" />
+    <reverseLight node="0|3" />
+    <turnLightLeft node="0|2" />
+</light>

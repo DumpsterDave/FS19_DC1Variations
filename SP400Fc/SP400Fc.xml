@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="selfPropelledSprayer">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>SP.400Fc</name>
+        <specs>
+            <workingWidth>36.0</workingWidth>
+            <power>400</power>
+            <maxSpeed>50</maxSpeed>
+        </specs>
+        <functions>
+            <function>$l10n_function_sprayer</function>
+        </functions>
+        <image>SP400Fc\store_newHollandSP400F.png</image>
+        <price>259000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>DC1</brand>
+        <category>sprayerVehicles</category>
+        <vertexBufferMemoryUsage>3952328</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1092522</indexBufferMemoryUsage>
+        <textureMemoryUsage>21146696</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_sprayer</typeDesc>
+        <filename>SP400Fc\SP400F.i3d</filename>
+        <size width="4.8" length="11" lengthOffset="-0.5"/>
+        <speedLimit value="12"/>
+        <components>
+            <component centerOfMass="0 1.5 0.15" solverIterationCount="10" mass="11500"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0.5 0">
+            <default name="DEFAULT_VEHICLE"/>
+            <turnedOn name="DEFAULT_VEHICLE_ON"/>
+            <selected name="DEFAULT_VEHICLE_SELECTED"/>
+            <turnedOnSelected name="DEFAULT_VEHICLE_SELECTED_ON"/>
+        </schemaOverlay>
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels autoRotateBackSpeed="1.8">
+                    <wheel filename="$data/shared/wheels/trelleborg/TM100/380_90R50.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.1" repr="wheelFrontAxisLeft" driveNode="wheelFrontLeft" initialCompression="30" suspTravel="0.13" spring="73" damper="20"/>
+                        <tire isCareWheel="true" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/trelleborg/TM100/380_90R50.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.1" repr="wheelFrontAxisRight" driveNode="wheelFrontRight" initialCompression="30" suspTravel="0.13" spring="73" damper="20"/>
+                        <tire isCareWheel="true" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/trelleborg/TM100/380_90R50.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="3.2" repr="wheelBackLeft" initialCompression="30" suspTravel="0.13" spring="74" damper="20"/>
+                        <tire isCareWheel="true" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/trelleborg/TM100/380_90R50.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="3.2" repr="wheelBackRight" initialCompression="30" suspTravel="0.13" spring="74" damper="20"/>
+                        <tire isCareWheel="true" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="65" rotMax="55" rotCenterWheel1="3" rotCenterWheel2="4"/>
+        </ackermannSteeringConfigurations>
+
+        <hubs>
+            <color0>SHARED_BLACK2</color0>
+            <color1>SHARED_BLACK2</color1>
+            <hub linkNode="wheelFrontLeft"  filename="$data/shared/wheels/hubs/hub_n12_6.xml" isLeft="true"  scale="0.385 0.385 0.385" />
+            <hub linkNode="wheelFrontRight" filename="$data/shared/wheels/hubs/hub_n12_6.xml" isLeft="false" scale="0.385 0.385 0.385" />
+            <hub linkNode="wheelBackLeft"   filename="$data/shared/wheels/hubs/hub_n12_6.xml" isLeft="true"  scale="0.385 0.385 0.385" />
+            <hub linkNode="wheelBackRight"  filename="$data/shared/wheels/hubs/hub_n12_6.xml" isLeft="false" scale="0.385 0.385 0.385" />
+        </hubs>
+    </wheels>
+
+    <lights>
+        <sharedLight linkNode="bigTriangle01" filename="$data/shared/assets/reflectors/lizard/bigTriangle.xml" />
+        <states>
+            <state lightTypes="0"/>
+            <state lightTypes="0 1"/>
+            <state lightTypes="0 1 2"/>
+        </states>
+
+        <realLights>
+            <low>
+                <light node="frontLightLow"         lightTypes="0" excludedLightTypes="2 3" />
+                <light node="workLightFrontHigh"    lightTypes="2"/>
+                <light node="workLightBackLow"      lightTypes="1"/>
+                <light node="highBeamLow"           lightTypes="3" />
+            </low>
+            <high>
+                <light node="frontLightHighRight"    lightTypes="0" excludedLightTypes="2 3" />
+                <light node="frontLightHigh1"        lightTypes="0" excludedLightTypes="2 3" />
+                <light node="backLightsHigh1"         lightTypes="0"/>
+                <light node="workLightBackHigh"      lightTypes="1"/>
+                <light node="workLightFrontHigh"     lightTypes="2"/>
+                <light node="highBeamHigh1"          lightTypes="3"/>
+                <light node="highBeamHighRight"      lightTypes="3"/>
+                <brakeLight node="backLightsHigh1" />
+                <turnLightLeft node="turnLightLeftFront2" />
+                <turnLightLeft node="turnLightLeftFront" />
+                <turnLightRight node="turnLightRightFront1" />
+                <turnLightRight node="turnLightRightFront" />
+                <interiorLight node="interiorScreenLight"/>
+            </high>
+        </realLights>
+
+        <defaultLights>
+            <defaultLight shaderNode="frontlightArmStatic" lightTypes="0 3" />
+            <defaultLight shaderNode="frontlightLeftStatic" lightTypes="0 3" />
+            <defaultLight shaderNode="frontlightRightStatic" lightTypes="0 3" />
+            <defaultLight shaderNode="backlightStatic" lightTypes="0" />
+            <defaultLight shaderNode="worklightFrontStatic" lightTypes="2" />
+            <defaultLight shaderNode="worklightFrontLeftStatic" lightTypes="2" />
+            <defaultLight shaderNode="worklightFrontRightStatic" lightTypes="2" />
+            <defaultLight shaderNode="worklightBackStatic" lightTypes="1" />
+            <defaultLight shaderNode="reverseLightStatic" lightTypes="1" />
+            <brakeLight   shaderNode="backlightStatic" />
+        </defaultLights>
+
+        <turnLights>
+            <turnLightLeft shaderNode="turnlightLeftBackStatic" />
+            <turnLightLeft shaderNode="turnlightLeftFrontStatic" />
+            <turnLightRight shaderNode="turnlightRightBackStatic" />
+            <turnLightRight shaderNode="turnlightRightFrontStatic" />
+        </turnLights>
+
+        <brakeLights>
+            <brakeLight shaderNode="backlightStatic" />
+        </brakeLights>
+
+        <sounds>
+            <switchLight template="SWITCH_01"  />
+            <turnLight template="SWITCH_TURNLIGHT"  />
+        </sounds>
+
+        <beaconLights>
+            <beaconLight node="beaconLight1" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml"/>
+            <beaconLight node="beaconLight2" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml"/>
+        </beaconLights>
+
+        <dashboards>
+            <dashboard displayType="EMITTER" valueType="lightState" node="joystickDecalsLight"  intensity="0.1" lightTypes="0 3" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="seatDecalLight"  intensity="0.1" lightTypes="0 3" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="cabinDecalLight"  intensity="0.1" lightTypes="0 3" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </lights>
+
+     <workAreas>
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="areaStart" widthNode="areaWidth" heightNode="areaHeight" />
+        </workArea>
+    </workAreas>
+
+    <sprayer fillUnitIndex="1" unloadInfoIndex="1" loadInfoIndex="1">
+        <usageScales workingWidth="36.0" scale="1"/>
+        <effects>
+            <effectNode effectNode="effectMain" delay="0" materialType="sprayer" materialTypeId="1"/>
+            <effectNode effectNode="effectLeftArm1" delay="0" materialType="sprayer" materialTypeId="1"/>
+            <effectNode effectNode="effectRightArm1" delay="0" materialType="sprayer" materialTypeId="1"/>
+            <effectNode effectNode="effectLeftArm2" delay="0" materialType="sprayer" materialTypeId="1"/>
+            <effectNode effectNode="effectRightArm2" delay="0" materialType="sprayer" materialTypeId="1"/>
+        </effects>
+    </sprayer>
+
+    <suspensions>
+        <suspension node="seat" weight="150" minTranslation="-0.02 -0.15 0.0" maxTranslation="0.02 0.15 0.0" suspensionParametersX="20 4" suspensionParametersY="5 1" suspensionParametersZ="20 4" />
+        <suspension useCharacterTorso="true" weight="90" minRotation="0 -5 -5" maxRotation="0 5 5" suspensionParametersY="7 1" suspensionParametersZ="7 1" />
+    </suspensions>
+
+    <turnOnVehicle turnOffIfNotAllowed="true" >
+        <sounds>
+            <work template="DEFAULT_SPRAYER" pitchOffset="0.75" linkNode="newHollandSP400F_main_component1" />
+        </sounds>
+    </turnOnVehicle>
+
+    <enterable>
+        <exitPoint node="exitPoint"/>
+        <enterReferenceNode node="newHollandSP400F_main_component1"/>
+        <enterAnimation name="enterAnimation"/>
+        <characterNode node="player_skin" cameraMinDistance="1.5" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="player_rightFoot"/>
+            <target ikChain="leftFoot" targetNode="player_leftFoot"/>
+            <target ikChain="rightArm" targetNode="player_rightHand"/>
+            <target ikChain="leftArm" targetNode="player_leftHand"/>
+        </characterNode>
+        <cameras>
+            <camera node="outdoorCamera1" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="7" transMax="35" translation="0 0 8.2" rotation="-25 180 0">
+                <raycastNode node="cameraRaycastNode1"/>
+                <raycastNode node="cameraRaycastNode2"/>
+            </camera>
+            <camera node="indoorCamera1" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" shadowFocusBox="shadowFocusBox"/>
+        </cameras>
+        <mirrors>
+            <mirror node="mirrorLeftDecal" prio="1"/>
+            <mirror node="mirrorRightDecal" prio="1"/>
+        </mirrors>
+    </enterable>
+
+    <motorized>
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="2" usage="170" fillType="diesel" />  <!-- usage is per hour at max load and max rpm -->
+            </consumerConfiguration>
+        </consumerConfigurations>
+        <motorConfigurations>
+            <motorConfiguration name="SP 400F">
+                <motor torqueScale="1.688" minRpm="850" maxRpm="2200" maxForwardSpeed="53" maxBackwardSpeed="20" brakeForce="13" lowBrakeForceScale="0.22" lowBrakeForceSpeedLimit="1" rotInertia="0.002">
+                    <torque normRpm="0.45" torque="0.9"/>
+                    <torque normRpm="0.5" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.72"/>
+                </motor>
+                <transmission minForwardGearRatio="12.3" maxForwardGearRatio="150" minBackwardGearRatio="35" maxBackwardGearRatio="150"/>
+            </motorConfiguration>
+        </motorConfigurations>
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.5" wheelIndex1="1" wheelIndex2="2"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="2.1" wheelIndex1="3" wheelIndex2="4"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.5" differentialIndex1="1" differentialIndex2="2"/>
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+        <exhaustEffects>
+            <exhaustEffect node="exhaustParticle1" filename="$data/particleSystems/shared/exhaust.i3d" minRpmColor="0.9 0.9 0.9 0.1" maxRpmColor="0.9 0.9 0.9 0.4" minRpmScale="0.1" maxRpmScale="0.55" xzRotationsOffset="0 0" xzRotationsForward="-20 0" xzRotationsBackward="150 0" xzRotationsLeft="0 -150" xzRotationsRight="0 150"/>
+        </exhaustEffects>
+        <motorStartDuration>2500</motorStartDuration>
+        <sounds externalSoundFile="SP400Fc/sounds/new_holland_sp400.xml" />
+
+        <dashboards>
+            <dashboard displayType="NUMBER" valueType="speed" numbers="numbersSpeed" precision="1" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT"    valueType="speedDir" node="joystick" minRot="-15 0.7 3" maxRot="14.4 0.44 -1.7" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ANIMATION" valueType="rpm" animName="rpmDisplay"  minValueAnim="400" maxValueAnim="2200" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ANIMATION" valueType="speed" animName="speedDisplay"  minValueAnim="0" maxValueAnim="50" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </motorized>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="WATER_SPLASH_01" />
+        </sounds>
+        <steeringWheel node="steeringWheel" indoorRotation="540" outdoorRotation="35"/>
+    </drivable>
+
+    <foldable>
+        <foldingParts startMoveDirection="1" turnOnFoldMinLimit="0" turnOnFoldMaxLimit="0.1">
+            <foldingPart animationName="folding" speedScale="0.7"/>
+        </foldingParts>
+    </foldable>
+
+    <animations>
+        <animation name="speedDisplay">
+            <part node="speedNeedleDecal" startTime="0.0" endTime="1" startRot="0 0 0" endRot="0 -178 0"/>
+        </animation>
+        <animation name="rpmDisplay">
+            <part node="rpmNeedleDecal" startTime="0.0" endTime="1" startRot="0 0 0" endRot="0 -178 0"/>
+        </animation>
+        <animation name="enterAnimation">
+            <part node="ladder" startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="60 0 0"/>
+        </animation>
+        <animation name="folding">
+            <part node="axisLeft" startTime="0.0" endTime="1.0" endTrans="0 0 0" startTrans="0.508 0 0"/>
+            <part node="axisRight" startTime="0.0" endTime="1.0" endTrans="0 0 0" startTrans="-0.508 0 0"/>
+            <part node="mainArmBottom" startTime="0.0" endTime="2.0" startRot="-40 0 0" endRot="-100 0 0"/>
+            <part node="mainArm" startTime="0.0" endTime="2.0" startRot="40 0 0" endRot="100 0 0"/>
+            <part node="mainArmTop" startTime="0.0" endTime="2.0" startRot="-40 0 0" endRot="-100 0 0"/>
+            <part node="armLeft" startTime="2.1" endTime="8.6" startRot="0 0 0" endRot="0 90 0"/>
+            <part node="armLeft2" startTime="2.1" endTime="8.6" startRot="0 0 0" endRot="0 -179 0"/>
+            <part node="armRight" startTime="2.0" endTime="8.5" startRot="0 0 0" endRot="0 -90 0"/>
+            <part node="armRight2" startTime="2.0" endTime="8.5" startRot="0 0 0" endRot="0 179 0"/>
+            <part node="armLeft1" startTime="6.0" endTime="7.0" startRot="0 0 0" endRot="0 0 6"/>
+            <part node="armRight1" startTime="6.0" endTime="7.0" startRot="0 0 0" endRot="0 0 -6"/>
+            <part node="armLeft1" startTime="9.0" endTime="10.0" startRot="0 0 6" endRot="0 0 2"/>
+            <part node="armRight1" startTime="9.0" endTime="10.0" startRot="0 0 -6" endRot="0 0 -2"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="mainArmBottom" foldMinLimit="0" foldMaxLimit="0.01">
+                <controls axis="AXIS_SPRAYER_ARM" invertAxis="true" mouseSpeedFactor="1.2" iconName="SPRAYER_ARM_TRANSLATE_Y"/>
+                <rotation rotSpeed="25" rotAcceleration="80" rotMax="0" rotMin="-85" rotationAxis="1"/>
+                <dependentPart node="mainArm"/>
+                <dependentPart node="mainArmTop"/>
+            </movingTool>
+            <movingTool node="mainArmTop">
+                <dependentPart node="hydraulicMainArmTop"/>
+            </movingTool>
+            <movingTool node="armLeft">
+                <dependentPart node="hydraulicArmLeft"/>
+            </movingTool>
+            <movingTool node="armRight">
+                <dependentPart node="hydraulicArmRight"/>
+            </movingTool>
+            <movingTool node="armLeft1">
+                <dependentPart node="hydraulicArmLeft1"/>
+            </movingTool>
+            <movingTool node="armRight1">
+                <dependentPart node="hydraulicArmRight1"/>
+            </movingTool>
+            <movingTool node="armLeft2">
+                <dependentPart node="hydraulicArmLeft2"/>
+            </movingTool>
+            <movingTool node="armRight2">
+                <dependentPart node="hydraulicArmRight2"/>
+            </movingTool>
+            <movingTool node="ladder">
+                <dependentPart node="hydraulicLadder"/>
+            </movingTool>
+        </movingTools>
+        <movingParts>
+            <movingPart node="mainArm" referenceFrame="newHollandSP400F_main_component1"/>
+            <movingPart node="mainArmTop" referenceFrame="mainArmBottom"/>
+            <movingPart node="hydraulicMainArmTop" referencePoint="hydraulicMainArmTopRef" referenceFrame="hydraulicMainArmTopRef" playSound="true">
+                <translatingPart node="hydraulicMainArmTopPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicArmLeft" referencePoint="hydraulicArmLeftRef" referenceFrame="hydraulicArmLeftRef" playSound="true">
+                <translatingPart node="hydraulicArmLeftPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicArmRight" referencePoint="hydraulicArmRightRef" referenceFrame="hydraulicArmRightRef" playSound="true">
+                <translatingPart node="hydraulicArmRightPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicArmLeft1" referencePoint="hydraulicArmLeft1Ref" referenceFrame="hydraulicArmLeft1Ref" playSound="true">
+                <translatingPart node="hydraulicArmLeft1Punch"/>
+            </movingPart>
+            <movingPart node="hydraulicArmRight1" referencePoint="hydraulicArmRight1Ref" referenceFrame="hydraulicArmRight1Ref" playSound="true">
+                <translatingPart node="hydraulicArmRight1Punch"/>
+            </movingPart>
+            <movingPart node="hydraulicArmLeft2" referencePoint="hydraulicArmLeft2Ref" referenceFrame="hydraulicArmLeft2RefFrame" playSound="true">
+                <translatingPart node="hydraulicArmLeft2Punch"/>
+            </movingPart>
+            <movingPart node="hydraulicArmRight2" referencePoint="hydraulicArmRight2Ref1" referenceFrame="hydraulicArmRight2RefFrame" playSound="true">
+                <translatingPart node="hydraulicArmRight2Punch"/>
+            </movingPart>
+            <movingPart node="hydraulicLadder" referencePoint="hydraulicLadderRef" referenceFrame="newHollandSP400F_main_component1" playSound="true">
+                <translatingPart node="hydraulicLadderPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicSteeringFrontLeft" referencePoint="hydraulicSteeringFrontLeftRef" referenceFrame="hydraulicSteeringFrontLeftRef" isActiveDirty="true">
+                <translatingPart node="hydraulicSteeringFrontLeftPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicSteeringFrontRight" referencePoint="hydraulicSteeringFrontRightRef" referenceFrame="hydraulicSteeringFrontRightRef" isActiveDirty="true">
+                <translatingPart node="hydraulicSteeringFrontRightPunch"/>
+            </movingPart>
+        </movingParts>
+        <sounds>
+            <hydraulic template="DEFAULT_HYDRAULIC_SOUND" />
+        </sounds>
+    </cylindered>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading width="17" offset="0 0 0" />
+                    <fillUnit unit="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="6057"/>
+                    <fillUnit capacity="568" unit="$l10n_unit_literShort" fillTypes="diesel" showInShop="false" showOnHud="false"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <honk>
+        <sound template="HONK_MF_BIG_TRACTOR"  />
+    </honk>
+
+    <ai>
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack"/>
+        <sizeMarkers leftNode="sizeMarkerLeft" rightNode="sizeMarkerRight" backNode="sizeMarkerBack"/>
+        <collisionTrigger node="aiCollisionTrigger"/>
+    </ai>
+
+    <dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE"   isMotorStarting="true" isMotorRunning="true"/>
+        </groups>
+
+        <default>
+            <dashboard displayType="EMITTER" node="dashboard" idleValue="-1" intensity="0.1" groups="MOTOR_ACTIVE" />
+        </default>
+    </dashboard>
+
+    <foliageBending>
+        <bendingNode minX="-1.7" maxX="1.7" minZ="-3" maxZ="3.3" yOffset="1.75" />
+        <bendingNode minX="-0.75" maxX="0.75" minZ="-4.5" maxZ="-3" yOffset="1.9" />
+        <bendingNode minX="-1.6" maxX="1.6" minZ="0" maxZ="0.5" yOffset="-0.4" node="mainArm"/>
+        <bendingNode minX="0" maxX="8.7" minZ="-0.2" maxZ="0.2" yOffset="-1.05" node="armLeft"/>
+        <bendingNode minX="-0.4" maxX="0" minZ="-3.8" maxZ="3.9" yOffset="0.55" node="effectLeftArm2"/>
+        <bendingNode minX="-8.7" maxX="0" minZ="-0.2" maxZ="0.2" yOffset="-1.05" node="armRight"/>
+        <bendingNode minX="-0.4" maxX="0" minZ="-3.8" maxZ="3.9" yOffset="0.55" node="effectRightArm2"/>
+    </foliageBending>
+
+     <baseMaterial>
+         <material name="SP400F_mat" baseNode="newHolland_vis">
+            <shaderParameter name="colorMat3" value="SHARED_BLACK2"/>
+            <shaderParameter name="colorMat4" value="NEWHOLLAND_BLUE1"/>
+            <shaderParameter name="colorMat5" value="SHARED_BLACK2"/>
+         </material>
+     </baseMaterial>
+
+     <baseMaterialConfigurations price="2000" useDefaultColors="true">
+        <baseMaterialConfiguration color="NEWHOLLAND_BLUE1"/>
+        <baseMaterialConfiguration name="WHITE MATTE" color="SHARED_WHITE2" material="1" price="3000"/>
+        <baseMaterialConfiguration name="TAN MATTE" color="KRONE_YELLOW1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="BLACK MATTE" color="SHARED_BLACK2" material="1" price="3000"/>
+        <baseMaterialConfiguration name="RED MATTE" color="CASEIH_RED1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="BLUE MATTE" color="NEWHOLLAND_BLUE1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="GREEN MATTE" color="JOHNDEERE_GREEN1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="OLIVE MATTE" color="0.07819 0.12214 0.02122 1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="BROWN MATTE" color="0.16827 0.06663 0.0319 1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="3000"/>
+        <baseMaterialConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="3000"/>
+        <material name="SP400F_mat" shaderParameter="colorMat4"/>
+     </baseMaterialConfigurations>
+
+     <designMaterialConfigurations price="1000" useDefaultColors="true">
+        <designMaterialConfiguration color="SHARED_BLACK2"/>
+        <designMaterialConfiguration name="WHITE MATTE" color="SHARED_WHITE2" material="1" price="1500"/>
+        <designMaterialConfiguration name="TAN MATTE" color="KRONE_YELLOW1" material="1" price="1500"/>
+        <designMaterialConfiguration name="BLACK MATTE" color="SHARED_BLACK2" material="1" price="1500"/>
+        <designMaterialConfiguration name="RED MATTE" color="CASEIH_RED1" material="1" price="1500"/>
+        <designMaterialConfiguration name="BLUE MATTE" color="NEWHOLLAND_BLUE1" material="1" price="1500"/>
+        <designMaterialConfiguration name="GREEN MATTE" color="JOHNDEERE_GREEN1" material="1" price="1500"/>
+        <designMaterialConfiguration name="OLIVE MATTE" color="0.07819 0.12214 0.02122 1" material="1" price="1500"/>
+        <designMaterialConfiguration name="BROWN MATTE" color="0.16827 0.06663 0.0319 1" material="1" price="1500"/>
+        <designMaterialConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="1500"/>
+        <designMaterialConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="1500"/>
+        <material name="SP400F_mat" shaderParameter="colorMat3"/>
+        <material name="SP400F_mat" shaderParameter="colorMat5"/>
+     </designMaterialConfigurations>
+
+     <rimColorConfigurations useDefaultColors="true" price="500">
+        <rimColorConfiguration color="SHARED_BLACK2"/>
+        <rimColorConfiguration name="WHITE MATTE" color="SHARED_WHITE2" material="1" price="750"/>
+        <rimColorConfiguration name="TAN MATTE" color="KRONE_YELLOW1" material="1" price="750"/>
+        <rimColorConfiguration name="BLACK MATTE" color="SHARED_BLACK2" material="1" price="750"/>
+        <rimColorConfiguration name="RED MATTE" color="CASEIH_RED1" material="1" price="750"/>
+        <rimColorConfiguration name="BLUE MATTE" color="NEWHOLLAND_BLUE1" material="1" price="750"/>
+        <rimColorConfiguration name="GREEN MATTE" color="JOHNDEERE_GREEN1" material="1" price="750"/>
+        <rimColorConfiguration name="OLIVE MATTE" color="0.07819 0.12214 0.02122 1" material="1" price="750"/>
+        <rimColorConfiguration name="BROWN MATTE" color="0.16827 0.06663 0.0319 1" material="1" price="750"/>
+        <rimColorConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="750"/>
+        <rimColorConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="750"/>
+    </rimColorConfigurations>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="newHollandSP400F_main_component1" node="0>" />
+        <i3dMapping id="axisLeft" node="0>0|0" />
+        <i3dMapping id="wheelFrontAxisLeft" node="0>0|0|0" />
+        <i3dMapping id="wheelFrontLeft" node="0>0|0|0|0" />
+        <i3dMapping id="hydraulicSteeringFrontLeftRef" node="0>0|0|0|1" />
+        <i3dMapping id="wheelBackLeft" node="0>0|0|1" />
+        <i3dMapping id="hydraulicSteeringFrontLeft" node="0>0|0|2" />
+        <i3dMapping id="hydraulicSteeringFrontLeftPunch" node="0>0|0|2|0" />
+        <i3dMapping id="frontlightLeftStatic" node="0>0|0|3|0|0" />
+        <i3dMapping id="turnlightLeftFrontStatic" node="0>0|0|3|0|1" />
+        <i3dMapping id="worklightFrontLeftStatic" node="0>0|0|3|0|2" />
+        <i3dMapping id="frontLightHigh1" node="0>0|0|3|1|0" />
+        <i3dMapping id="highBeamHigh1" node="0>0|0|3|1|1" />
+        <i3dMapping id="turnLightLeftFront" node="0>0|0|3|2|0|0" />
+        <i3dMapping id="axisRight" node="0>0|1" />
+        <i3dMapping id="wheelFrontAxisRight" node="0>0|1|0" />
+        <i3dMapping id="wheelFrontRight" node="0>0|1|0|0" />
+        <i3dMapping id="hydraulicSteeringFrontRightRef" node="0>0|1|0|1" />
+        <i3dMapping id="wheelBackRight" node="0>0|1|1" />
+        <i3dMapping id="hydraulicSteeringFrontRight" node="0>0|1|2" />
+        <i3dMapping id="hydraulicSteeringFrontRightPunch" node="0>0|1|2|0" />
+        <i3dMapping id="frontlightRightStatic" node="0>0|1|3|0|0" />
+        <i3dMapping id="turnlightRightFrontStatic" node="0>0|1|3|0|1" />
+        <i3dMapping id="worklightFrontRightStatic" node="0>0|1|3|0|2" />
+        <i3dMapping id="frontLightHighRight" node="0>0|1|3|1|0" />
+        <i3dMapping id="highBeamHighRight" node="0>0|1|3|1|1" />
+        <i3dMapping id="turnLightRightFront" node="0>0|1|3|2|0|0" />
+        <i3dMapping id="outdoorCameraTarget" node="0>1|0" />
+        <i3dMapping id="outdoorCamera1" node="0>1|0|0" />
+        <i3dMapping id="indoorCamera1" node="0>1|1" />
+        <i3dMapping id="cameraRaycastNode1" node="0>1|2" />
+        <i3dMapping id="cameraRaycastNode2" node="0>1|3" />
+        <i3dMapping id="shadowFocusBox" node="0>1|4" />
+        <i3dMapping id="turnlightLeftBackStatic" node="0>2|0|0" />
+        <i3dMapping id="turnlightRightBackStatic" node="0>2|0|1" />
+        <i3dMapping id="backlightStatic" node="0>2|0|2" />
+        <i3dMapping id="reverseLightStatic" node="0>2|0|3" />
+        <i3dMapping id="worklightFrontStatic" node="0>2|0|4" />
+        <i3dMapping id="worklightBackStatic" node="0>2|0|5" />
+        <i3dMapping id="frontLightLow" node="0>2|1|0" />
+        <i3dMapping id="highBeamLow" node="0>2|1|1" />
+        <i3dMapping id="workLightBackLow" node="0>2|2|0" />
+        <i3dMapping id="workLightBackHigh" node="0>2|2|1" />
+        <i3dMapping id="workLightFrontHigh" node="0>2|2|2" />
+        <i3dMapping id="backLightsHigh1" node="0>2|3|0" />
+        <i3dMapping id="beaconLight1" node="0>2|4|0" />
+        <i3dMapping id="beaconLight2" node="0>2|4|1" />
+        <i3dMapping id="turnLightLeftFront2" node="0>2|5|0" />
+        <i3dMapping id="turnLightRightFront1" node="0>2|5|1" />
+        <i3dMapping id="bigTriangle01" node="0>2|6" />
+        <i3dMapping id="exitPoint" node="0>3" />
+        <i3dMapping id="seat" node="0>4" />
+        <i3dMapping id="player_skin" node="0>4|0" />
+        <i3dMapping id="joystick" node="0>4|1|0" />
+        <i3dMapping id="player_rightHand" node="0>4|1|0|0" />
+        <i3dMapping id="joystickDecalsLight" node="0>4|1|0|1" />
+        <i3dMapping id="dashboard" node="0>4|2" />
+        <i3dMapping id="rpmNeedleDecal" node="0>4|4|0|0" />
+        <i3dMapping id="speedNeedleDecal" node="0>4|4|1|0" />
+        <i3dMapping id="numbersSpeed" node="0>4|4|2" />
+        <i3dMapping id="seatDecalLight" node="0>4|5" />
+        <i3dMapping id="interiorScreenLight" node="0>4|6" />
+        <i3dMapping id="steeringWheel" node="0>5|0" />
+        <i3dMapping id="player_leftHand" node="0>5|0|0" />
+        <i3dMapping id="player_rightFoot" node="0>7|0" />
+        <i3dMapping id="player_leftFoot" node="0>7|1" />
+        <i3dMapping id="sizeMarkerLeft" node="0>8|0|0" />
+        <i3dMapping id="sizeMarkerRight" node="0>8|0|1" />
+        <i3dMapping id="sizeMarkerBack" node="0>8|0|2" />
+        <i3dMapping id="aiCollisionTrigger" node="0>8|1" />
+        <i3dMapping id="exhaustParticle1" node="0>9|0" />
+        <i3dMapping id="mainArmBottom" node="0>10|0" />
+        <i3dMapping id="mainArm" node="0>10|0|0" />
+        <i3dMapping id="armLeft" node="0>10|0|0|0" />
+        <i3dMapping id="armLeft1" node="0>10|0|0|0|0" />
+        <i3dMapping id="armLeft2" node="0>10|0|0|0|0|0|0" />
+        <i3dMapping id="hydraulicArmLeft2Ref" node="0>10|0|0|0|0|0|0|0" />
+        <i3dMapping id="effectLeftArm2" node="0>10|0|0|0|0|0|0|1" />
+        <i3dMapping id="hydraulicArmLeft2" node="0>10|0|0|0|0|0|1" />
+        <i3dMapping id="hydraulicArmLeft2Punch" node="0>10|0|0|0|0|0|1|0" />
+        <i3dMapping id="hydraulicArmLeft2RefFrame" node="0>10|0|0|0|0|0|2" />
+        <i3dMapping id="hydraulicArmLeft1Ref" node="0>10|0|0|0|0|1" />
+        <i3dMapping id="effectLeftArm1" node="0>10|0|0|0|0|2" />
+        <i3dMapping id="hydraulicArmLeft1" node="0>10|0|0|0|1" />
+        <i3dMapping id="hydraulicArmLeft1Punch" node="0>10|0|0|0|1|0" />
+        <i3dMapping id="hydraulicArmLeftRef" node="0>10|0|0|0|2" />
+        <i3dMapping id="armRight" node="0>10|0|0|1" />
+        <i3dMapping id="armRight1" node="0>10|0|0|1|0" />
+        <i3dMapping id="armRight2" node="0>10|0|0|1|0|0|0" />
+        <i3dMapping id="hydraulicArmRight2Ref1" node="0>10|0|0|1|0|0|0|0" />
+        <i3dMapping id="effectRightArm2" node="0>10|0|0|1|0|0|0|1" />
+        <i3dMapping id="hydraulicArmRight2" node="0>10|0|0|1|0|0|1" />
+        <i3dMapping id="hydraulicArmRight2Punch" node="0>10|0|0|1|0|0|1|0" />
+        <i3dMapping id="hydraulicArmRight2RefFrame" node="0>10|0|0|1|0|0|2" />
+        <i3dMapping id="hydraulicArmRight1Ref" node="0>10|0|0|1|0|1" />
+        <i3dMapping id="effectRightArm1" node="0>10|0|0|1|0|2" />
+        <i3dMapping id="hydraulicArmRight1" node="0>10|0|0|1|1" />
+        <i3dMapping id="hydraulicArmRight1Punch" node="0>10|0|0|1|1|0" />
+        <i3dMapping id="hydraulicArmRightRef" node="0>10|0|0|1|2" />
+        <i3dMapping id="hydraulicArmLeft" node="0>10|0|0|2" />
+        <i3dMapping id="hydraulicArmLeftPunch" node="0>10|0|0|2|0" />
+        <i3dMapping id="hydraulicArmRight" node="0>10|0|0|3" />
+        <i3dMapping id="hydraulicArmRightPunch" node="0>10|0|0|3|0" />
+        <i3dMapping id="frontlightArmStatic" node="0>10|0|0|4|0|0" />
+        <i3dMapping id="areaStart" node="0>10|0|0|5|0" />
+        <i3dMapping id="areaWidth" node="0>10|0|0|5|1" />
+        <i3dMapping id="areaHeight" node="0>10|0|0|5|2" />
+        <i3dMapping id="aiMarkerLeft" node="0>10|0|0|6|0" />
+        <i3dMapping id="aiMarkerRight" node="0>10|0|0|6|1" />
+        <i3dMapping id="aiMarkerBack" node="0>10|0|0|6|2" />
+        <i3dMapping id="effectMain" node="0>10|0|0|7" />
+        <i3dMapping id="mainArmTop" node="0>10|1" />
+        <i3dMapping id="hydraulicMainArmTopRef" node="0>10|1|0" />
+        <i3dMapping id="ladder" node="0>10|2" />
+        <i3dMapping id="hydraulicLadderRef" node="0>10|2|0" />
+        <i3dMapping id="hydraulicMainArmTop" node="0>11|0" />
+        <i3dMapping id="hydraulicMainArmTopPunch" node="0>11|0|0" />
+        <i3dMapping id="hydraulicLadder" node="0>11|1" />
+        <i3dMapping id="hydraulicLadderPunch" node="0>11|1|0" />
+        <i3dMapping id="mirrorLeftDecal" node="0>12|0" />
+        <i3dMapping id="mirrorRightDecal" node="0>12|1" />
+        <i3dMapping id="newHolland_vis" node="0>13|0" />
+        <i3dMapping id="cabinDecalLight" node="0>13|8" />
+    </i3dMappings>
+<!-- </vehicle> -->
+
+
+</vehicle>

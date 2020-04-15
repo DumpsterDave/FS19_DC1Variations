@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds>
+    <motorStart template="SPRAYER_MOTOR_START" file="Pantera4502c/sounds/amazone_pantera_start.wav" linkNode="0>"/>
+    <motorStop template="SPRAYER_MOTOR_STOP" file="Pantera4502c/sounds/amazone_pantera_stop.wav" linkNode="0>"/>
+
+    <motor template="SPRAYER_MOTOR_IDLE" file="Pantera4502c/sounds/amazone_pantera_idle_loop.wav" linkNode="0>"/>
+    <motor template="SPRAYER_MOTOR_OFFLOAD_RUN" file="Pantera4502c/sounds/amazone_pantera_run_loop.wav" linkNode="0>"/>
+    
+    <motor template="SPRAYER_MOTOR_ONLOAD_RUN" file="Pantera4502c/sounds/amazone_pantera_load_loop.wav" linkNode="0>"/>
+
+    <gearbox template="DEFAULT_GEARBOX" file="$data/sounds/vehicles/transmission/transmission_cvtx_loop.wav" linkNode="0>"/>
+    <retarder template="DEFAULT_RETARDER" file="$data/sounds/vehicles/retarder/retarder_loop_01.wav" linkNode="0>"/>
+
+    <airCompressorStart template="BRAKE_COMPRESSOR_START" linkNode="0>"/>
+    <airCompressorStop template="BRAKE_COMPRESSOR_STOP" linkNode="0>"/>
+    <airCompressorRun template="BRAKE_COMPRESSOR_RUN" linkNode="0>"/>
+    <compressedAir template="BRAKE_SMALL" linkNode="0>"/>
+    <airRelease template="BRAKE_REGULATOR_VALVE" linkNode="0>"/>
+</sounds>

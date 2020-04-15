@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="43">
+    <author>DumpsterDave</author>
+    <version>1.2.43.1</version>
+    <iconFilename>icon.dds</iconFilename>
+    <title>
+        <en>DEFCON 1 Variations</en>
+    </title>
+    <description>
+        <en>Provides DEFCON 1 Customizations to some vehicles</en>
+    </description>
+    <storeItems>
+        <!--Large Tractors-->
+        <storeItem xmlFilename="1000_Varioc/vario1000c.xml"/>
+        <storeItem xmlFilename="MT900Ec/mt900Ec.xml"/>
+        <storeItem xmlFilename="QuadtracC/quadtracc.xml"/>
+        <storeItem xmlFilename="1100_MTc/mt1100c.xml"/>
+        <!--Small Harvesters/Headers-->
+        <storeItem xmlFilename="Nova_330c/nova330c.xml"/>
+        <storeItem xmlFilename="Corn_Champion_5Rc/zieglerCornChampion5Rc.xml"/>
+        <storeItem xmlFilename="PowerStream500c/powerStream500c.xml"/>
+        <!--Medium Harvesters/Headers-->
+        <storeItem xmlFilename="RSM_161c/161c.xml"/>
+        <storeItem xmlFilename="Diamant_HS12c/diamantHS12c.xml"/>
+        <storeItem xmlFilename="DS900c/DS900c.xml"/>
+        <!--Large Harvesters/Headers-->
+        <storeItem xmlFilename="CR1090c/cr1090c.xml"/>
+        <storeItem xmlFilename="Quasar_HS16c/quasarHS16c.xml"/>
+        <storeItem xmlFilename="3162c_Draper_45FT/3162cDraper45ft.xml"/>
+        <!--Forage Harvesters/Headers-->
+        <storeItem xmlFilename="BiG_X_1180c/bigX1180c.xml"/>
+        <storeItem xmlFilename="FR_780c/newHollandFR780c.xml"/>
+        <storeItem xmlFilename="130FBc/fb130c.xml"/>
+        <storeItem xmlFilename="300FPc/pp273c.xml"/>
+        <storeItem xmlFilename="600FDRc/fdr600c.xml"/>
+        <storeItem xmlFilename="SFI_900c/sfi900c.xml"/>
+        <!--Other Harvesters-->
+        <storeItem xmlFilename="A8800MRc/A8800MRc.xml"/>
+        <storeItem xmlFilename="ME635c/moduleExpress635c.xml"/>
+        <storeItem xmlFilename="ScorpionKingC/ponsseScorpionC.xml"/>
+        <!--Sprayers-->
+        <storeItem xmlFilename="Rubicon_9000c/rubicon9000c.xml"/>
+        <storeItem xmlFilename="Imperador_3c/imperador3c.xml"/>
+        <storeItem xmlFilename="SP400Fc/SP400Fc.xml"/>
+        <storeItem xmlFilename="Pantera4502c/amazonePantera4502c.xml"/>
+        <!--Fertilizers-->
+        <storeItem xmlFilename="K105c/k105c.xml"/>
+        <storeItem xmlFilename="PS_3401c/PS3401c.xml"/>
+        <!--Trucks-->
+        <storeItem xmlFilename="PHOENIX6x6c/tatraPhoenixc.xml"/>
+        <!--Trailers-->
+        <storeItem xmlFilename="SB3060c/SB3060c.xml"/>
+        <storeItem xmlFilename="canavieiroc/canavieiroc.xml"/>
+        <storeItem xmlFilename="AM19c/am19c.xml"/>
+        <storeItem xmlFilename="RDS7500c/RDS7500c.xml"/>
+        <storeItem xmlFilename="TX_560_Dc/TX560Dc.xml"/>
+        <!--Wheel Loaders-->
+        <storeItem xmlFilename="W190Dc/W190Dc.xml"/>
+        <!--Telehandlers-->
+        <storeItem xmlFilename="MLAT533c/MLAT533c.xml"/>
+        <!--Misc-->
+        <storeItem xmlFilename="MC18c/MC18c.xml"/>
+        <storeItem xmlFilename="Maus5c/maus5c.xml"/>
+        <!--Buildings-->
+        <storeItem xmlFilename="silos/farmSiloSmall.xml"/>
+        <storeItem xmlFilename="silos/farmSiloLarge.xml"/>
+        <storeItem xmlFilename="silos/siloExtension.xml"/>
+    </storeItems>
+    <brands>
+        <brand name="DC1" title="DEFCON 1 Gaming" image="brand.dds"/>
+    </brands>
+    <multiplayer supported="true"/>
+</modDesc>

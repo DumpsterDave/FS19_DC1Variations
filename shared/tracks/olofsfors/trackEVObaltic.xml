@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<crawler>
+    <file name="shared/tracks/olofsfors/track710_45R26_5.i3d" leftNode="1" rightNode="1"/>
+    <scrollerNodes>
+        <scrollerNode node="0" scrollSpeed="-0.145" scrollLength="7.204" shaderParameterName="scrollPosition" shaderParameterComponent="1"/>
+    </scrollerNodes>
+</crawler>
