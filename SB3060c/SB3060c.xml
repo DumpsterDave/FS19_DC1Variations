@@ -339,6 +339,9 @@
             <shaderParameter name="colorMat0" value="KRAMPE_RED1"/>
             <shaderParameter name="colorMat1" value="KRAMPE_GREY1"/>
         </material>
+        <material name="coverPlaneClosed_mat" baseNode="coverPlaneClosed">
+            <shaderParameter name="colorMat0" value="KRAMPE_GREY1"/>
+        </material>
         <material name="krampeBandit750Belt_mat" baseNode="belt">
             <shaderParameter name="colorMat0" value="0.024 0.151 0.071 5"/>
         </material>
@@ -359,6 +362,7 @@
         <baseMaterialConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="4500"/>
         <baseMaterialConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="4500"/>
         <material name="krampeSB3060_mat" shaderParameter="colorMat0"/>
+        <material name="krampeAlpha_mat" shaderParameter="colorMat0"/>
     </baseMaterialConfigurations>
     <designMaterialConfigurations price="1000" useDefaultColors="true">
         <designMaterialConfiguration name="KRAMPE GREY" color="KRAMPE_GREY1"/>
@@ -372,9 +376,9 @@
         <designMaterialConfiguration name="BROWN MATTE" color="0.16827 0.06663 0.0319 1" material="1" price="1500"/>
         <designMaterialConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="1500"/>
         <designMaterialConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="1500"/>
+        <material name="coverPlaneClosed_mat" shaderParameter="colorMat0"/>
         <material name="krampeSB3060_mat" shaderParameter="colorMat1"/>
         <material name="krampeBandit750Belt_mat" shaderParameter="colorMat0"/>
-        <material name="krampeAlpha_mat" shaderParameter="colorMat0"/>
     </designMaterialConfigurations>
     <rimColorConfigurations useDefaultColors="true" price="500">
         <rimColorConfiguration name="KRAMPE GREY" color="KRAMPE_GREY1"/>
