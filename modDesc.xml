@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="43">
     <author>DumpsterDave</author>
-    <version>1.2.44.0</version>
+    <version>1.2.46.0</version>
     <iconFilename>icon.dds</iconFilename>
     <title>
         <en>DEFCON 1 Variations</en>
@@ -38,6 +38,9 @@
         <storeItem xmlFilename="A8800MRc/A8800MRc.xml"/>
         <storeItem xmlFilename="ME635c/moduleExpress635c.xml"/>
         <storeItem xmlFilename="ScorpionKingC/ponsseScorpionC.xml"/>
+        <!--Seeders-->
+        <storeItem xmlFilename="SeedHawk980AirCart/980AirCart.xml"/>
+        <storeItem xmlFilename="SeedHawkXLToolbar84ft/xlAirDrill84.xml"/>
         <!--Sprayers-->
         <storeItem xmlFilename="Rubicon_9000c/rubicon9000c.xml"/>
         <storeItem xmlFilename="Imperador_3c/imperador3c.xml"/>

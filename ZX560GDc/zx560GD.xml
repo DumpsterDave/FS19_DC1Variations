@@ -476,10 +476,18 @@
     <foliageBending>
         <bendingNode minX="-1.6" maxX="1.6" minZ="-6" maxZ="5" yOffset="1"/>
     </foliageBending>
+    
     <baseMaterial>
         <material name="zx560GD_mat" baseNode="zx560gd_vis">
             <shaderParameter name="colorMat0" value="KRONE_GREEN1"/>
             <shaderParameter name="colorMat1" value="KRONE_YELLOW1"/>
+            <shaderParameter name="colorMat2" value="0.916 0.916 0.916"/>
+        </material>
+        <material name="zx560GDTransparent_mat" baseNode="transparent">
+            <shaderParameter name="colorMat0" value="KRONE_GREEN1"/>
+        </material>
+        <material name="zx560GDTransparent_mat" baseNode="rotor">
+            <shaderParameter name="colorMat0" value="KRONE_GREEN1"/>
         </material>
         <material name="zx560GD1_mat" baseNode="exterior02">
             <shaderParameter name="colorMat0" value="KRONE_GREEN1"/>
@@ -487,11 +495,17 @@
         </material>
         <material name="zx560GD1_mat" baseNode="coverLeft">
             <shaderParameter name="colorMat0" value="KRONE_GREEN1"/>
+            <shaderParameter name="colorMat1" value="KRONE_YELLOW1"/>
         </material>
         <material name="zx560GD1_mat" baseNode="coverRight">
             <shaderParameter name="colorMat0" value="KRONE_GREEN1"/>
+            <shaderParameter name="colorMat1" value="KRONE_YELLOW1"/>
         </material>
         <material name="zx560GD1_mat" baseNode="coverHolder">
+            <shaderParameter name="colorMat0" value="KRONE_GREEN1"/>
+            <shaderParameter name="colorMat1" value="KRONE_YELLOW1"/>
+        </material>
+        <material name="zx560GDBelt_mat" baseNode="scratchingFloor">
             <shaderParameter name="colorMat0" value="KRONE_GREEN1"/>
         </material>
     </baseMaterial>
@@ -509,6 +523,7 @@
         <baseMaterialConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="1500"/>
         <baseMaterialConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="1500"/>
         <material name="zx560GD_mat" shaderParameter="colorMat0"/>
+        <material name="zx560GDTransparent_mat" shaderParameter="colorMat0"/>
         <material name="zx560GD1_mat" shaderParameter="colorMat0"/>
     </baseMaterialConfigurations>
 
@@ -525,7 +540,9 @@
         <designMaterialConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="1000"/>
         <designMaterialConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="1000"/>
         <material name="zx560GD_mat" shaderParameter="colorMat1"/>
+        <material name="zx560GD_mat" shaderParameter="colorMat2"/>
         <material name="zx560GD1_mat" shaderParameter="colorMat1"/>
+        <material name="zx560GDBelt_mat" shaderParameter="colorMat0"/>
     </designMaterialConfigurations>
 
     <rimColorConfigurations useDefaultColors="true" price="500">
@@ -686,6 +703,7 @@
         <i3dMapping id="coverLeft" node="0>0|9|0|0"/>
         <i3dMapping id="coverRight" node="0>0|9|0|1"/>
         <i3dMapping id="coverHolder" node="0>0|9|0|2"/>
+        <i3dMapping id="transparent" node="0>0|10|0"/>
         <i3dMapping id="exterior02" node="0>0|10|1"/>
         <i3dMapping id="axisPickupLeftNode" node="1>0|0"/>
         <i3dMapping id="supportWheelPickupLeft" node="1>0|0|0"/>
