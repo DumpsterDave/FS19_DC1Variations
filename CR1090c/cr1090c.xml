@@ -673,21 +673,25 @@
     <designConfigurations>
         <designConfiguration name="New Holland" price="0">
             <objectChange node="configNH" visibilityActive="true"/>
+            <objectChange node="decals_new" visibilityActive="true"/>
             <objectChange node="configDCW" visibilityActive="false"/>
             <objectChange node="configDCB" visibilityActive="false"/>
         </designConfiguration>
         <designConfiguration name="DEFCON 1 White" price="0">
             <objectChange node="configNH" visibilityActive="false"/>
+            <objectChange node="decals_new" visibilityActive="false"/>
             <objectChange node="configDCW" visibilityActive="true"/>
             <objectChange node="configDCB" visibilityActive="false"/>
         </designConfiguration>
         <designConfiguration name="DEFCON 1 Black" price="0">
             <objectChange node="configNH" visibilityActive="false"/>
+            <objectChange node="decals_new" visibilityActive="false"/>
             <objectChange node="configDCW" visibilityActive="false"/>
             <objectChange node="configDCB" visibilityActive="true"/>
         </designConfiguration>
         <designConfiguration name="Stealth" price="0">
             <objectChange node="configNH" visibilityActive="false"/>
+            <objectChange node="decals_new" visibilityActive="false"/>
             <objectChange node="configDCW" visibilityActive="false"/>
             <objectChange node="configDCB" visibilityActive="false"/>
         </designConfiguration>
@@ -1136,6 +1140,7 @@
         <i3dMapping id="vis2" node="0>0|15|0"/>
         <i3dMapping id="monitor1" node="0>0|15|7"/>
         <i3dMapping id="cabinDecalLight" node="0>0|15|9"/>
+        <i3dMapping id="decals_new" node="0>0|15|10"/>
         <i3dMapping id="axisBackLeftRot" node="1>0|0"/>
         <i3dMapping id="axisBackLeft" node="1>0|0|0"/>
         <i3dMapping id="wheelBackLeftRot" node="1>0|0|0|0"/>
