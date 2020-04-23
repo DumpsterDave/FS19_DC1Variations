@@ -341,6 +341,7 @@
         </material>
         <material name="coverPlaneClosed_mat" baseNode="coverPlaneClosed">
             <shaderParameter name="colorMat0" value="KRAMPE_GREY1"/>
+            <shaderParameter name="colorMat1" value="KRAMPE_GREY1"/>
         </material>
         <material name="krampeBandit750Belt_mat" baseNode="belt">
             <shaderParameter name="colorMat0" value="0.024 0.151 0.071 5"/>
@@ -468,6 +469,7 @@
 		<designMaterialConfiguration name="Pink Fabric" color="1 0.00972 1" material="7"/>
 		<designMaterialConfiguration name="Olive Fabric" color="0.07819 0.12214 0.02122" material="7"/>
         <material name="coverPlaneClosed_mat" shaderParameter="colorMat0"/>
+        <material name="coverPlaneClosed_mat" shaderParameter="colorMat1"/>
         <material name="krampeSB3060_mat" shaderParameter="colorMat1"/>
         <material name="krampeBandit750Belt_mat" shaderParameter="colorMat0"/>
     </designMaterialConfigurations>
