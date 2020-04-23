@@ -123,6 +123,8 @@
         <sharedLight linkNode="lowerArmLights02" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLightOval_02.xml"/>
         <sharedLight linkNode="reflector01" filename="$data/shared/assets/lights/lizard/sideMarker_04Orange.xml"/>
         <sharedLight linkNode="reflector02" filename="$data/shared/assets/lights/lizard/sideMarker_04Orange.xml"/>
+        <sharedLight linkNode="leftArmTipLight" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLightCircle_01.xml"/>
+        <sharedLight linkNode="rightArmTipLight" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLightCircle_01.xml"/>
         <states>
             <state lightTypes="0"/>
             <state lightTypes="0 1"/>
@@ -140,6 +142,8 @@
                 <light node="workLightFrontHigh2" lightTypes="1"/>
                 <light node="workLightFrontHigh4" lightTypes="1"/>
                 <light node="workLightFrontHigh1" lightTypes="2"/>
+                <light node="leftArmTipSpotlight" lightTypes="1"/>
+                <light node="rightArmTipSpotlight" lightTypes="1"/>
                 <light node="highBeamHigh" lightTypes="3"/>
                 <light node="backLightsHigh1" lightTypes="0"/>
                 <brakeLight node="backLightsHigh1"/>
@@ -678,6 +682,8 @@
         <i3dMapping id="worklight03" node="0>0|7|0|0|0|0|9"/>
         <i3dMapping id="workLightFrontHigh2" node="0>0|7|0|0|0|0|10"/>
         <i3dMapping id="realMirrors04" node="0>0|7|0|0|0|0|11"/>
+        <i3dMapping id="leftArmTipLight" node="0>0|7|0|0|0|0|0|0|6"/>
+        <i3dMapping id="leftArmTipSpotlight" node="0>0|7|0|0|0|0|0|0|6|0"/>
         <i3dMapping id="leftArmHydraulic" node="0>0|7|0|0|0|1"/>
         <i3dMapping id="leftArmHydraulicPunch" node="0>0|7|0|0|0|1|0"/>
         <i3dMapping id="leftArmFoldingHydraulicRef" node="0>0|7|0|0|0|2"/>
@@ -698,6 +704,8 @@
         <i3dMapping id="worklight06" node="0>0|7|0|0|1|0|9"/>
         <i3dMapping id="workLightFrontHigh4" node="0>0|7|0|0|1|0|10"/>
         <i3dMapping id="realMirrors05" node="0>0|7|0|0|1|0|11"/>
+        <i3dMapping id="rightArmTipLight" node="0>0|7|0|0|1|0|0|0|6"/>
+        <i3dMapping id="rightArmTipSpotlight" node="0>0|7|0|0|1|0|0|0|6|0"/>
         <i3dMapping id="rightArmHydraulic" node="0>0|7|0|0|1|1"/>
         <i3dMapping id="rightArmHydraulicPunch" node="0>0|7|0|0|1|1|0"/>
         <i3dMapping id="rightArmFoldingHydraulicRef" node="0>0|7|0|0|1|2"/>
