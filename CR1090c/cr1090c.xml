@@ -71,15 +71,14 @@
                     </wheel>
                 </wheels>
                 <crawlers>
-                    <crawler filename="$data/shared/wheels/crawlers/caseIH/newHollandTracks.xml" linkNode="driveNodeLeft" wheelIndex="1" isLeft="true"/>
-                    <crawler filename="$data/shared/wheels/crawlers/caseIH/newHollandTracks.xml" linkNode="driveNodeRight" wheelIndex="3" isLeft="false"/>
+                    <crawler filename="CR1090c/newHollandTracks.xml" linkNode="driveNodeLeft" wheelIndex="1" isLeft="true"/>
+                    <crawler filename="CR1090c/newHollandTracks.xml" linkNode="driveNodeRight" wheelIndex="3" isLeft="false"/>
                 </crawlers>
             </wheelConfiguration>
         </wheelConfigurations>
         <ackermannSteeringConfigurations>
             <ackermannSteering rotSpeed="40" rotMax="35" rotCenter="0 2.0"/>
         </ackermannSteeringConfigurations>
-        <rimColor>SHARED_WHITE2</rimColor>
         <hubs>
             <color0>SHARED_BLACK1</color0>
             <hub linkNode="wheelBackLeft" filename="$data/shared/wheels/hubs/hub_n10_6.xml" isLeft="true" scale="0.33 0.33 0.33"/>
@@ -702,33 +701,209 @@
         </material>
     </baseMaterial>
 
-    <baseMaterialConfigurations price="5000" useDefaultColors="true">
+    <baseMaterialConfigurations price="5000" useDefaultColors="false">
         <baseMaterialConfiguration color="NEWHOLLAND_YELLOW1"/>
-        <baseMaterialConfiguration name="WHITE MATTE" color="SHARED_WHITE2" material="1" price="7500"/>
-        <baseMaterialConfiguration name="TAN MATTE" color="KRONE_YELLOW1" material="1" price="7500"/>
-        <baseMaterialConfiguration name="BLACK MATTE" color="SHARED_BLACK2" material="1" price="7500"/>
-        <baseMaterialConfiguration name="RED MATTE" color="CASEIH_RED1" material="1" price="7500"/>
-        <baseMaterialConfiguration name="BLUE MATTE" color="NEWHOLLAND_BLUE1" material="1" price="7500"/>
-        <baseMaterialConfiguration name="GREEN MATTE" color="JOHNDEERE_GREEN1" material="1" price="7500"/>
-        <baseMaterialConfiguration name="OLIVE MATTE" color="0.07819 0.12214 0.02122 1" material="1" price="7500"/>
-        <baseMaterialConfiguration name="BROWN MATTE" color="0.16827 0.06663 0.0319 1" material="1" price="7500"/>
-        <baseMaterialConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="7500"/>
-        <baseMaterialConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="7500"/>
+        <baseMaterialConfiguration name="Matte White" color="SHARED_WHITE2" material="1"/>
+		<baseMaterialConfiguration name="Matte Gray" color="SHARED_GREY5" material="1"/>
+		<baseMaterialConfiguration name="Matte Black" color="SHARED_BLACK2" material="1"/>
+		<baseMaterialConfiguration name="Matte Tan" color="KRONE_YELLOW1" material="1"/>
+		<baseMaterialConfiguration name="Matte Brown" color="0.16827 0.06663 0.0319" material="1"/>
+		<baseMaterialConfiguration name="Matte Red" color="CASEIH_RED1" material="1"/>
+		<baseMaterialConfiguration name="Matte Orange" color="STARA_ORANGE" material="1"/>
+		<baseMaterialConfiguration name="Matte Yellow" color="JOHNDEERE_YELLOW1" material="1"/>
+		<baseMaterialConfiguration name="Matte Green" color="JOHNDEERE_GREEN1" material="1"/>
+		<baseMaterialConfiguration name="Matte Blue" color="NEWHOLLAND_BLUE1" material="1"/>
+		<baseMaterialConfiguration name="Matte Indigo" color="0 0 0.13287" material="1"/>
+		<baseMaterialConfiguration name="Matte Violet" color="0.45079 0.00972 1" material="1"/>
+		<baseMaterialConfiguration name="Matte Pink" color="1 0.00972 1" material="1"/>
+		<baseMaterialConfiguration name="Matte Olive" color="0.07819 0.12214 0.02122" material="1"/>
+		<baseMaterialConfiguration name="Gloss White" color="SHARED_WHITE2" material="33"/>
+		<baseMaterialConfiguration name="Gloss Gray" color="SHARED_GREY5" material="33"/>
+		<baseMaterialConfiguration name="Gloss Black" color="SHARED_BLACK2" material="33"/>
+		<baseMaterialConfiguration name="Gloss Tan" color="KRONE_YELLOW1" material="33"/>
+		<baseMaterialConfiguration name="Gloss Brown" color="0.16827 0.06663 0.0319" material="33"/>
+		<baseMaterialConfiguration name="Gloss Red" color="CASEIH_RED1" material="33"/>
+		<baseMaterialConfiguration name="Gloss Orange" color="STARA_ORANGE" material="33"/>
+		<baseMaterialConfiguration name="Gloss Yellow" color="JOHNDEERE_YELLOW1" material="33"/>
+		<baseMaterialConfiguration name="Gloss Green" color="JOHNDEERE_GREEN1" material="33"/>
+		<baseMaterialConfiguration name="Gloss Blue" color="NEWHOLLAND_BLUE1" material="33"/>
+		<baseMaterialConfiguration name="Gloss Indigo" color="0 0 0.13287" material="33"/>
+		<baseMaterialConfiguration name="Gloss Violet" color="0.45079 0.00972 1" material="33"/>
+		<baseMaterialConfiguration name="Gloss Pink" color="1 0.00972 1" material="33"/>
+		<baseMaterialConfiguration name="Gloss Olive" color="0.07819 0.12214 0.02122" material="33"/>
+		<baseMaterialConfiguration name="Kandy White" color="SHARED_WHITE2" material="3"/>
+		<baseMaterialConfiguration name="Kandy Gray" color="SHARED_GREY5" material="3"/>
+		<baseMaterialConfiguration name="Kandy Black" color="SHARED_BLACK2" material="3"/>
+		<baseMaterialConfiguration name="Kandy Tan" color="KRONE_YELLOW1" material="3"/>
+		<baseMaterialConfiguration name="Kandy Brown" color="0.16827 0.06663 0.0319" material="3"/>
+		<baseMaterialConfiguration name="Kandy Red" color="CASEIH_RED1" material="3"/>
+		<baseMaterialConfiguration name="Kandy Orange" color="STARA_ORANGE" material="3"/>
+		<baseMaterialConfiguration name="Kandy Yellow" color="JOHNDEERE_YELLOW1" material="3"/>
+		<baseMaterialConfiguration name="Kandy Green" color="JOHNDEERE_GREEN1" material="3"/>
+		<baseMaterialConfiguration name="Kandy Blue" color="NEWHOLLAND_BLUE1" material="3"/>
+		<baseMaterialConfiguration name="Kandy Indigo" color="0 0 0.13287" material="3"/>
+		<baseMaterialConfiguration name="Kandy Violet" color="0.45079 0.00972 1" material="3"/>
+		<baseMaterialConfiguration name="Kandy Pink" color="1 0.00972 1" material="3"/>
+		<baseMaterialConfiguration name="Kandy Olive" color="0.07819 0.12214 0.02122" material="3"/>
+		<baseMaterialConfiguration name="Chrome" color="1 1 1" material="2"/>
+		<baseMaterialConfiguration name="Gray Chrome" color="SHARED_GREY5" material="2"/>
+		<baseMaterialConfiguration name="Black Chrome" color="SHARED_BLACK2" material="2"/>
+		<baseMaterialConfiguration name="Tan Chrome" color="KRONE_YELLOW1" material="2"/>
+		<baseMaterialConfiguration name="Brown Chrome" color="0.16827 0.06663 0.0319" material="2"/>
+		<baseMaterialConfiguration name="Red Chrome" color="CASEIH_RED1" material="2"/>
+		<baseMaterialConfiguration name="Orange Chrome" color="STARA_ORANGE" material="2"/>
+		<baseMaterialConfiguration name="Yellow Chrome" color="JOHNDEERE_YELLOW1" material="2"/>
+		<baseMaterialConfiguration name="Green Chrome" color="JOHNDEERE_GREEN1" material="2"/>
+		<baseMaterialConfiguration name="Blue Chrome" color="NEWHOLLAND_BLUE1" material="2"/>
+		<baseMaterialConfiguration name="Indigo Chrome" color="0 0 0.13287" material="2"/>
+		<baseMaterialConfiguration name="Violet Chrome" color="0.45079 0.00972 1" material="2"/>
+		<baseMaterialConfiguration name="Pink Chrome" color="1 0.00972 1" material="2"/>
+		<baseMaterialConfiguration name="Olive Chrome" color="0.07819 0.12214 0.02122" material="2"/>
+		<baseMaterialConfiguration name="Galvanized White" color="SHARED_WHITE2" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Gray" color="SHARED_GREY5" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Black" color="SHARED_BLACK2" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Tan" color="KRONE_YELLOW1" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Brown" color="0.16827 0.06663 0.0319" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Red" color="CASEIH_RED1" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Orange" color="STARA_ORANGE" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Yellow" color="JOHNDEERE_YELLOW1" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Green" color="JOHNDEERE_GREEN1" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Blue" color="NEWHOLLAND_BLUE1" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Indigo" color="0 0 0.13287" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Violet" color="0.45079 0.00972 1" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Pink" color="1 0.00972 1" material="4"/>
+		<baseMaterialConfiguration name="Galvanized Olive" color="0.07819 0.12214 0.02122" material="4"/>
+		<baseMaterialConfiguration name="White Wood" color="SHARED_WHITE2" material="14"/>
+		<baseMaterialConfiguration name="Gray Wood" color="SHARED_GREY5" material="14"/>
+		<baseMaterialConfiguration name="Black Wood" color="SHARED_BLACK2" material="14"/>
+		<baseMaterialConfiguration name="Tan Wood" color="KRONE_YELLOW1" material="14"/>
+		<baseMaterialConfiguration name="Brown Wood" color="0.16827 0.06663 0.0319" material="14"/>
+		<baseMaterialConfiguration name="Red Wood" color="CASEIH_RED1" material="14"/>
+		<baseMaterialConfiguration name="Orange Wood" color="STARA_ORANGE" material="14"/>
+		<baseMaterialConfiguration name="Yellow Wood" color="JOHNDEERE_YELLOW1" material="14"/>
+		<baseMaterialConfiguration name="Green Wood" color="JOHNDEERE_GREEN1" material="14"/>
+		<baseMaterialConfiguration name="Blue Wood" color="NEWHOLLAND_BLUE1" material="14"/>
+		<baseMaterialConfiguration name="Indigo Wood" color="0 0 0.13287" material="14"/>
+		<baseMaterialConfiguration name="Violet Wood" color="0.45079 0.00972 1" material="14"/>
+		<baseMaterialConfiguration name="Pink Wood" color="1 0.00972 1" material="14"/>
+		<baseMaterialConfiguration name="Olive Wood" color="0.07819 0.12214 0.02122" material="14"/>
+		<baseMaterialConfiguration name="Reflective White" color="SHARED_WHITE2" material="20"/>
+		<baseMaterialConfiguration name="Reflective Gray" color="SHARED_GREY5" material="20"/>
+		<baseMaterialConfiguration name="Reflective Black" color="SHARED_BLACK2" material="20"/>
+		<baseMaterialConfiguration name="Reflective Tan" color="KRONE_YELLOW1" material="20"/>
+		<baseMaterialConfiguration name="Reflective Brown" color="0.16827 0.06663 0.0319" material="20"/>
+		<baseMaterialConfiguration name="Reflective Red" color="CASEIH_RED1" material="20"/>
+		<baseMaterialConfiguration name="Reflective Orange" color="STARA_ORANGE" material="20"/>
+		<baseMaterialConfiguration name="Reflective Yellow" color="JOHNDEERE_YELLOW1" material="20"/>
+		<baseMaterialConfiguration name="Reflective Green" color="JOHNDEERE_GREEN1" material="20"/>
+		<baseMaterialConfiguration name="Reflective Blue" color="NEWHOLLAND_BLUE1" material="20"/>
+		<baseMaterialConfiguration name="Reflective Indigo" color="0 0 0.13287" material="20"/>
+		<baseMaterialConfiguration name="Reflective Violet" color="0.45079 0.00972 1" material="20"/>
+		<baseMaterialConfiguration name="Reflective Pink" color="1 0.00972 1" material="20"/>
+		<baseMaterialConfiguration name="Reflective Olive" color="0.07819 0.12214 0.02122" material="20"/>
         <material name="cr1090_mat" shaderParameter="colorMat0"/>
     </baseMaterialConfigurations>
 
-    <rimColorConfigurations useDefaultColors="true" price="1000">
+    <rimColorConfigurations useDefaultColors="false" price="1000">
         <rimColorConfiguration color="SHARED_WHITE2"/>
-        <rimColorConfiguration name="WHITE MATTE" color="SHARED_WHITE2" material="1" price="1500"/>
-        <rimColorConfiguration name="TAN MATTE" color="KRONE_YELLOW1" material="1" price="1500"/>
-        <rimColorConfiguration name="BLACK MATTE" color="SHARED_BLACK2" material="1" price="1500"/>
-        <rimColorConfiguration name="RED MATTE" color="CASEIH_RED1" material="1" price="1500"/>
-        <rimColorConfiguration name="BLUE MATTE" color="NEWHOLLAND_BLUE1" material="1" price="1500"/>
-        <rimColorConfiguration name="GREEN MATTE" color="JOHNDEERE_GREEN1" material="1" price="1500"/>
-        <rimColorConfiguration name="OLIVE MATTE" color="0.07819 0.12214 0.02122 1" material="1" price="1500"/>
-        <rimColorConfiguration name="BROWN MATTE" color="0.16827 0.06663 0.0319 1" material="1" price="1500"/>
-        <rimColorConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="1500"/>
-        <rimColorConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="1500"/>
+        <rimColorConfiguration name="Matte White" color="SHARED_WHITE2" material="1"/>
+		<rimColorConfiguration name="Matte Gray" color="SHARED_GREY5" material="1"/>
+		<rimColorConfiguration name="Matte Black" color="SHARED_BLACK2" material="1"/>
+		<rimColorConfiguration name="Matte Tan" color="KRONE_YELLOW1" material="1"/>
+		<rimColorConfiguration name="Matte Brown" color="0.16827 0.06663 0.0319" material="1"/>
+		<rimColorConfiguration name="Matte Red" color="CASEIH_RED1" material="1"/>
+		<rimColorConfiguration name="Matte Orange" color="STARA_ORANGE" material="1"/>
+		<rimColorConfiguration name="Matte Yellow" color="JOHNDEERE_YELLOW1" material="1"/>
+		<rimColorConfiguration name="Matte Green" color="JOHNDEERE_GREEN1" material="1"/>
+		<rimColorConfiguration name="Matte Blue" color="NEWHOLLAND_BLUE1" material="1"/>
+		<rimColorConfiguration name="Matte Indigo" color="0 0 0.13287" material="1"/>
+		<rimColorConfiguration name="Matte Violet" color="0.45079 0.00972 1" material="1"/>
+		<rimColorConfiguration name="Matte Pink" color="1 0.00972 1" material="1"/>
+		<rimColorConfiguration name="Matte Olive" color="0.07819 0.12214 0.02122" material="1"/>
+		<rimColorConfiguration name="Gloss White" color="SHARED_WHITE2" material="33"/>
+		<rimColorConfiguration name="Gloss Gray" color="SHARED_GREY5" material="33"/>
+		<rimColorConfiguration name="Gloss Black" color="SHARED_BLACK2" material="33"/>
+		<rimColorConfiguration name="Gloss Tan" color="KRONE_YELLOW1" material="33"/>
+		<rimColorConfiguration name="Gloss Brown" color="0.16827 0.06663 0.0319" material="33"/>
+		<rimColorConfiguration name="Gloss Red" color="CASEIH_RED1" material="33"/>
+		<rimColorConfiguration name="Gloss Orange" color="STARA_ORANGE" material="33"/>
+		<rimColorConfiguration name="Gloss Yellow" color="JOHNDEERE_YELLOW1" material="33"/>
+		<rimColorConfiguration name="Gloss Green" color="JOHNDEERE_GREEN1" material="33"/>
+		<rimColorConfiguration name="Gloss Blue" color="NEWHOLLAND_BLUE1" material="33"/>
+		<rimColorConfiguration name="Gloss Indigo" color="0 0 0.13287" material="33"/>
+		<rimColorConfiguration name="Gloss Violet" color="0.45079 0.00972 1" material="33"/>
+		<rimColorConfiguration name="Gloss Pink" color="1 0.00972 1" material="33"/>
+		<rimColorConfiguration name="Gloss Olive" color="0.07819 0.12214 0.02122" material="33"/>
+		<rimColorConfiguration name="Kandy White" color="SHARED_WHITE2" material="3"/>
+		<rimColorConfiguration name="Kandy Gray" color="SHARED_GREY5" material="3"/>
+		<rimColorConfiguration name="Kandy Black" color="SHARED_BLACK2" material="3"/>
+		<rimColorConfiguration name="Kandy Tan" color="KRONE_YELLOW1" material="3"/>
+		<rimColorConfiguration name="Kandy Brown" color="0.16827 0.06663 0.0319" material="3"/>
+		<rimColorConfiguration name="Kandy Red" color="CASEIH_RED1" material="3"/>
+		<rimColorConfiguration name="Kandy Orange" color="STARA_ORANGE" material="3"/>
+		<rimColorConfiguration name="Kandy Yellow" color="JOHNDEERE_YELLOW1" material="3"/>
+		<rimColorConfiguration name="Kandy Green" color="JOHNDEERE_GREEN1" material="3"/>
+		<rimColorConfiguration name="Kandy Blue" color="NEWHOLLAND_BLUE1" material="3"/>
+		<rimColorConfiguration name="Kandy Indigo" color="0 0 0.13287" material="3"/>
+		<rimColorConfiguration name="Kandy Violet" color="0.45079 0.00972 1" material="3"/>
+		<rimColorConfiguration name="Kandy Pink" color="1 0.00972 1" material="3"/>
+		<rimColorConfiguration name="Kandy Olive" color="0.07819 0.12214 0.02122" material="3"/>
+		<rimColorConfiguration name="Chrome" color="1 1 1" material="2"/>
+		<rimColorConfiguration name="Gray Chrome" color="SHARED_GREY5" material="2"/>
+		<rimColorConfiguration name="Black Chrome" color="SHARED_BLACK2" material="2"/>
+		<rimColorConfiguration name="Tan Chrome" color="KRONE_YELLOW1" material="2"/>
+		<rimColorConfiguration name="Brown Chrome" color="0.16827 0.06663 0.0319" material="2"/>
+		<rimColorConfiguration name="Red Chrome" color="CASEIH_RED1" material="2"/>
+		<rimColorConfiguration name="Orange Chrome" color="STARA_ORANGE" material="2"/>
+		<rimColorConfiguration name="Yellow Chrome" color="JOHNDEERE_YELLOW1" material="2"/>
+		<rimColorConfiguration name="Green Chrome" color="JOHNDEERE_GREEN1" material="2"/>
+		<rimColorConfiguration name="Blue Chrome" color="NEWHOLLAND_BLUE1" material="2"/>
+		<rimColorConfiguration name="Indigo Chrome" color="0 0 0.13287" material="2"/>
+		<rimColorConfiguration name="Violet Chrome" color="0.45079 0.00972 1" material="2"/>
+		<rimColorConfiguration name="Pink Chrome" color="1 0.00972 1" material="2"/>
+		<rimColorConfiguration name="Olive Chrome" color="0.07819 0.12214 0.02122" material="2"/>
+		<rimColorConfiguration name="Galvanized White" color="SHARED_WHITE2" material="4"/>
+		<rimColorConfiguration name="Galvanized Gray" color="SHARED_GREY5" material="4"/>
+		<rimColorConfiguration name="Galvanized Black" color="SHARED_BLACK2" material="4"/>
+		<rimColorConfiguration name="Galvanized Tan" color="KRONE_YELLOW1" material="4"/>
+		<rimColorConfiguration name="Galvanized Brown" color="0.16827 0.06663 0.0319" material="4"/>
+		<rimColorConfiguration name="Galvanized Red" color="CASEIH_RED1" material="4"/>
+		<rimColorConfiguration name="Galvanized Orange" color="STARA_ORANGE" material="4"/>
+		<rimColorConfiguration name="Galvanized Yellow" color="JOHNDEERE_YELLOW1" material="4"/>
+		<rimColorConfiguration name="Galvanized Green" color="JOHNDEERE_GREEN1" material="4"/>
+		<rimColorConfiguration name="Galvanized Blue" color="NEWHOLLAND_BLUE1" material="4"/>
+		<rimColorConfiguration name="Galvanized Indigo" color="0 0 0.13287" material="4"/>
+		<rimColorConfiguration name="Galvanized Violet" color="0.45079 0.00972 1" material="4"/>
+		<rimColorConfiguration name="Galvanized Pink" color="1 0.00972 1" material="4"/>
+		<rimColorConfiguration name="Galvanized Olive" color="0.07819 0.12214 0.02122" material="4"/>
+		<rimColorConfiguration name="White Wood" color="SHARED_WHITE2" material="14"/>
+		<rimColorConfiguration name="Gray Wood" color="SHARED_GREY5" material="14"/>
+		<rimColorConfiguration name="Black Wood" color="SHARED_BLACK2" material="14"/>
+		<rimColorConfiguration name="Tan Wood" color="KRONE_YELLOW1" material="14"/>
+		<rimColorConfiguration name="Brown Wood" color="0.16827 0.06663 0.0319" material="14"/>
+		<rimColorConfiguration name="Red Wood" color="CASEIH_RED1" material="14"/>
+		<rimColorConfiguration name="Orange Wood" color="STARA_ORANGE" material="14"/>
+		<rimColorConfiguration name="Yellow Wood" color="JOHNDEERE_YELLOW1" material="14"/>
+		<rimColorConfiguration name="Green Wood" color="JOHNDEERE_GREEN1" material="14"/>
+		<rimColorConfiguration name="Blue Wood" color="NEWHOLLAND_BLUE1" material="14"/>
+		<rimColorConfiguration name="Indigo Wood" color="0 0 0.13287" material="14"/>
+		<rimColorConfiguration name="Violet Wood" color="0.45079 0.00972 1" material="14"/>
+		<rimColorConfiguration name="Pink Wood" color="1 0.00972 1" material="14"/>
+		<rimColorConfiguration name="Olive Wood" color="0.07819 0.12214 0.02122" material="14"/>
+		<rimColorConfiguration name="Reflective White" color="SHARED_WHITE2" material="20"/>
+		<rimColorConfiguration name="Reflective Gray" color="SHARED_GREY5" material="20"/>
+		<rimColorConfiguration name="Reflective Black" color="SHARED_BLACK2" material="20"/>
+		<rimColorConfiguration name="Reflective Tan" color="KRONE_YELLOW1" material="20"/>
+		<rimColorConfiguration name="Reflective Brown" color="0.16827 0.06663 0.0319" material="20"/>
+		<rimColorConfiguration name="Reflective Red" color="CASEIH_RED1" material="20"/>
+		<rimColorConfiguration name="Reflective Orange" color="STARA_ORANGE" material="20"/>
+		<rimColorConfiguration name="Reflective Yellow" color="JOHNDEERE_YELLOW1" material="20"/>
+		<rimColorConfiguration name="Reflective Green" color="JOHNDEERE_GREEN1" material="20"/>
+		<rimColorConfiguration name="Reflective Blue" color="NEWHOLLAND_BLUE1" material="20"/>
+		<rimColorConfiguration name="Reflective Indigo" color="0 0 0.13287" material="20"/>
+		<rimColorConfiguration name="Reflective Violet" color="0.45079 0.00972 1" material="20"/>
+		<rimColorConfiguration name="Reflective Pink" color="1 0.00972 1" material="20"/>
+		<rimColorConfiguration name="Reflective Olive" color="0.07819 0.12214 0.02122" material="20"/>
     </rimColorConfigurations>
 
     <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>

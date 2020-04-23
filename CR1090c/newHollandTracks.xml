@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<crawler>
+    <file name="$data/shared/wheels/crawlers/caseIH/caseIHTracks.i3d" leftNode="0|0" rightNode="0|1"/>
+    <scrollerNodes>
+        <scrollerNode node="0" scrollSpeed="0.5" scrollLength="6.76" shaderParameterName="offsetUV" shaderParameterComponent="0 1"/>
+    </scrollerNodes>
+    <rotatingParts>
+        <rotatingPart node="1" radius="0.48" />
+        <rotatingPart node="2" radius="0.36" />
+        <rotatingPart node="3" radius="0.36" />
+        <rotatingPart node="4" radius="0.2" />
+        <rotatingPart node="5" radius="0.2" />
+        <rotatingPart node="6" radius="0.2" />
+        <rotatingPart node="7" radius="0.2" />
+    </rotatingParts>
+    <rimColorNodes>
+        <rimColorNode node="1" shaderParameter="colorMat0"/>
+        <rimColorNode node="2" shaderParameter="colorMat0"/>
+        <rimColorNode node="3" shaderParameter="colorMat0"/>
+        <rimColorNode node="4" shaderParameter="colorMat0"/>
+        <rimColorNode node="5" shaderParameter="colorMat0"/>
+        <rimColorNode node="6" shaderParameter="colorMat0"/>
+        <rimColorNode node="7" shaderParameter="colorMat0"/>
+    </rimColorNodes>
+    <objectChange node="8|0" visibilityActive="false"/>
+    <objectChange node="8|1" visibilityActive="true"/>
+</crawler>
