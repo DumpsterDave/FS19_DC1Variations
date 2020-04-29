@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>Snow Selling Station</name>	
+		<image>snowSellingStation/store_snowSellingStation.dds</image>
+        <price>15000</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>DC1</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        
+        <vertexBufferMemoryUsage>78164</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>18648</indexBufferMemoryUsage>
+        <textureMemoryUsage>1485904</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+	
+    <placeableType>sellingStation</placeableType>
+    <filename>snowSellingStation/snowSellingStation.i3d</filename>
+    <placement testSizeX="1" testSizeZ="1" sizeX="1" sizeZ="1" useRandomYRotation="false" useManualYRotation="true"/>
+    
+	<sellingStation stationName="SnowStation" appearsOnPDA="true" storageRadius="0" litersForFullPriceDrop="100000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="0|0|0|0|0" baleTriggerNode="0|0|0|0|1" />
+		<fillType name="snow"            priceScale="1" supportsGreatDemand="false" disablePriceDrop="true" />
+    </sellingStation>
+    
+	<hotspots>
+        <hotspot name="selling Station" fullName="Selling Point" imageName="SELLING_POINT" hidable="true" linkNode="0|1" category="CATEGORY_TRIGGERS"/>
+    </hotspots>
+	
+		
+	<clearAreas>
+        <clearArea startNode="2|0" widthNode="2|0|0" heightNode="2|0|1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="15" maxSlope="20" maxEdgeAngle="20">
+        <levelAreas>
+            <levelArea startNode="2|0" widthNode="2|0|0" heightNode="2|0|1" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+  <tipOcclusionUpdateArea sizeX="8" sizeZ="11"/> 
+	
+</placeable>
