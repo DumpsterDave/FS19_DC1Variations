@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="43">
     <author>DumpsterDave</author>
-    <version>1.47.0.0</version>
+    <version>1.50.0.0</version>
     <iconFilename>icon.dds</iconFilename>
     <title>
         <en>DEFCON 1 Variations</en>
@@ -19,6 +19,7 @@
         <storeItem xmlFilename="Nova_330c/nova330c.xml"/>
         <storeItem xmlFilename="Corn_Champion_5Rc/zieglerCornChampion5Rc.xml"/>
         <storeItem xmlFilename="PowerStream500c/powerStream500c.xml"/>
+        <storeItem xmlFilename="HR12c/holmerHR12c.xml"/>
         <!--Medium Harvesters/Headers-->
         <storeItem xmlFilename="RSM_161c/161c.xml"/>
         <storeItem xmlFilename="Diamant_HS12c/diamantHS12c.xml"/>
@@ -38,6 +39,7 @@
         <storeItem xmlFilename="A8800MRc/A8800MRc.xml"/>
         <storeItem xmlFilename="ME635c/moduleExpress635c.xml"/>
         <storeItem xmlFilename="ScorpionKingC/ponsseScorpionC.xml"/>
+        <storeItem xmlFilename="Terra_Dos_T4-40c/terraDosT4_40c.xml"/>
         <!--Seeders-->
         <storeItem xmlFilename="SeedHawk980AirCart/980AirCart.xml"/>
         <storeItem xmlFilename="SeedHawkXLToolbar84ft/xlAirDrill84.xml"/>
@@ -58,6 +60,7 @@
         <storeItem xmlFilename="RDS7500c/RDS7500c.xml"/>
         <storeItem xmlFilename="TX_560_Dc/TX560Dc.xml"/>
         <storeItem xmlFilename="ZX560GDc/zx560GD.xml"/>
+        <storeItem xmlFilename="HR12cTrailer/HR12cTrailer.xml"/>
         <!--Wheel Loaders-->
         <storeItem xmlFilename="W190Dc/W190Dc.xml"/>
         <!--Telehandlers-->

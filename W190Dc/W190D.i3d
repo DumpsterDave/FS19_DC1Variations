@@ -6,7 +6,7 @@
   </Asset>
 
   <Files>
-    <File fileId="40" filename="../../../../../../../Downloads/BlenderExports/W190DDecalsDC1_diffuse.dds"/>
+    <File fileId="40" filename="W190DDecalsDC1_diffuse.dds"/>
     <File fileId="28" filename="$data/shaders/dashboardLightsShader.xml"/>
     <File fileId="24" filename="$data/shaders/decalShader.xml"/>
     <File fileId="34" filename="$data/shaders/mirrorShader.xml"/>

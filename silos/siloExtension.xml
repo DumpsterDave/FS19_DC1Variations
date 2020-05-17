@@ -3,14 +3,14 @@
     <storeData>
         <name>Large Bulk Silo Extension</name>
         <specs>
-            <capacity>150000</capacity>
+            <capacity>1000000</capacity>
             <fillTypeCategories>bulk</fillTypeCategories>
         </specs>
         <image>silos/store_siloExtension.png</image>
         <functions>
             <function>$l10n_function_siloExtension</function>
         </functions>
-        <price>90000</price>
+        <price>250000</price>
         <dailyUpkeep>25</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -27,7 +27,7 @@
     <filename>silos/siloExtension.i3d</filename>
     <placement testSizeX="6" testSizeZ="6" sizeX="5" sizeZ="5" useRandomYRotation="false" useManualYRotation="true"/>
     <tipOcclusionUpdateArea sizeX="5" sizeZ="5"/>
-    <storage node="3" fillTypeCategories="bulk" capacityPerFillType="100000"/>
+    <storage node="3" fillTypeCategories="bulk" capacityPerFillType="1000000"/>
     <clearAreas>
         <clearArea startIndex="2|0" widthIndex="2|1" heightIndex="2|2"/>
     </clearAreas>

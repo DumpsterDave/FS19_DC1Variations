@@ -490,49 +490,352 @@
 
     </baseMaterial>
 
-    <baseMaterialConfigurations price="4000" useDefaultColors="true">
-        <baseMaterialConfiguration name="ROSTSELMASH RED" color="ROSTSELMASH_RED1"/>
-        <baseMaterialConfiguration name="WHITE MATTE" color="SHARED_WHITE2" material="1" price="6000"/>
-        <baseMaterialConfiguration name="TAN MATTE" color="KRONE_YELLOW1" material="1" price="6000"/>
-        <baseMaterialConfiguration name="BLACK MATTE" color="SHARED_BLACK2" material="1" price="6000"/>
-        <baseMaterialConfiguration name="RED MATTE" color="CASEIH_RED1" material="1" price="6000"/>
-        <baseMaterialConfiguration name="BLUE MATTE" color="NEWHOLLAND_BLUE1" material="1" price="6000"/>
-        <baseMaterialConfiguration name="GREEN MATTE" color="JOHNDEERE_GREEN1" material="1" price="6000"/>
-        <baseMaterialConfiguration name="OLIVE MATTE" color="0.07819 0.12214 0.02122 1" material="1" price="6000"/>
-        <baseMaterialConfiguration name="BROWN MATTE" color="0.16827 0.06663 0.0319 1" material="1" price="6000"/>
-        <baseMaterialConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="6000"/>
-        <baseMaterialConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="6000"/>
+    <baseMaterialConfigurations price="1500" useDefaultColors="true">
+        <baseMaterialConfiguration name="Rostselmash Red" color="ROSTSELMASH_RED1"/>
+        <baseMaterialConfiguration name="Matte White" color="SHARED_WHITE2" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss White" color="SHARED_WHITE2" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy White" color="SHARED_WHITE2" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Chrome" color="1 1 1" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized White" color="SHARED_WHITE2" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin White" color="SHARED_WHITE2" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective White" color="SHARED_WHITE2" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Gray" color="SHARED_GREY5" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Gray" color="SHARED_GREY5" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Gray" color="SHARED_GREY5" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Gray" color="SHARED_GREY5" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Gray Chrome" color="SHARED_GREY5" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized" color="SHARED_GREY5" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Gray" color="SHARED_GREY5" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Gray" color="SHARED_GREY5" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Black" color="SHARED_BLACK2" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Black" color="SHARED_BLACK2" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Black" color="SHARED_BLACK2" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Black" color="SHARED_BLACK2" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Black Chrome" color="SHARED_BLACK2" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized Black" color="SHARED_BLACK2" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Black" color="SHARED_BLACK2" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Black" color="SHARED_BLACK2" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Tan" color="0.39676 0.3564 0.26225" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Tan" color="0.39676 0.3564 0.26225" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Tan" color="0.39676 0.3564 0.26225" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Tan" color="0.39676 0.3564 0.26225" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Tan Chrome" color="0.39676 0.3564 0.26225" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized Tan" color="0.39676 0.3564 0.26225" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Tan" color="0.39676 0.3564 0.26225" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Tan" color="0.39676 0.3564 0.26225" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Brown" color="0.16827 0.06663 0.0319" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Brown" color="0.16827 0.06663 0.0319" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Brown" color="0.16827 0.06663 0.0319" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Brown" color="0.16827 0.06663 0.0319" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Brown Chrome" color="0.16827 0.06663 0.0319" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized Brown" color="0.16827 0.06663 0.0319" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Brown" color="0.16827 0.06663 0.0319" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Brown" color="0.16827 0.06663 0.0319" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Red" color="CASEIH_RED1" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Red" color="CASEIH_RED1" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Red" color="CASEIH_RED1" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Red" color="CASEIH_RED1" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Red Chrome" color="CASEIH_RED1" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized Red" color="CASEIH_RED1" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Red" color="CASEIH_RED1" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Red" color="CASEIH_RED1" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Orange" color="STARA_ORANGE" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Orange" color="STARA_ORANGE" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Orange" color="STARA_ORANGE" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Orange" color="STARA_ORANGE" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Orange Chrome" color="STARA_ORANGE" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized Orange" color="STARA_ORANGE" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Orange" color="STARA_ORANGE" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Orange" color="STARA_ORANGE" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Yellow" color="JOHNDEERE_YELLOW1" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Yellow" color="JOHNDEERE_YELLOW1" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Yellow" color="JOHNDEERE_YELLOW1" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Yellow" color="JOHNDEERE_YELLOW1" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Yellow Chrome" color="JOHNDEERE_YELLOW1" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized Yellow" color="JOHNDEERE_YELLOW1" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Yellow" color="JOHNDEERE_YELLOW1" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Yellow" color="JOHNDEERE_YELLOW1" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Green" color="JOHNDEERE_GREEN1" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Green" color="JOHNDEERE_GREEN1" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Green" color="JOHNDEERE_GREEN1" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Green" color="JOHNDEERE_GREEN1" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Green Chrome" color="JOHNDEERE_GREEN1" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized Green" color="JOHNDEERE_GREEN1" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Green" color="JOHNDEERE_GREEN1" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Green" color="JOHNDEERE_GREEN1" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Blue" color="NEWHOLLAND_BLUE1" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Blue" color="NEWHOLLAND_BLUE1" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Blue" color="NEWHOLLAND_BLUE1" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Blue" color="NEWHOLLAND_BLUE1" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Blue Chrome" color="NEWHOLLAND_BLUE1" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized Blue" color="NEWHOLLAND_BLUE1" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Blue" color="NEWHOLLAND_BLUE1" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Blue" color="NEWHOLLAND_BLUE1" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Indigo" color="0 0 0.13287" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Indigo" color="0 0 0.13287" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Indigo" color="0 0 0.13287" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Indigo" color="0 0 0.13287" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Indigo Chrome" color="0 0 0.13287" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized Indigo" color="0 0 0.13287" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Indigo" color="0 0 0.13287" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Indigo" color="0 0 0.13287" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Violet" color="0.45079 0.00972 1" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Violet" color="0.45079 0.00972 1" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Violet" color="0.45079 0.00972 1" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Violet" color="0.45079 0.00972 1" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Violet Chrome" color="0.45079 0.00972 1" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized Violet" color="0.45079 0.00972 1" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Violet" color="0.45079 0.00972 1" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Violet" color="0.45079 0.00972 1" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Matte Pink" color="1 0.00972 1" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Pink" color="1 0.00972 1" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Pink" color="1 0.00972 1" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Pink" color="1 0.00972 1" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Pink Chrome" color="1 0.00972 1" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized Pink" color="1 0.00972 1" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Pink" color="1 0.00972 1" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Pink" color="1 0.00972 1" material="20" price="1500"/>
+		<baseMaterialConfiguration name="Matte Olive" color="0.07819 0.12214 0.02122" material="0" price="1500"/>
+		<baseMaterialConfiguration name="Matte Olive" color="0.07819 0.12214 0.02122" material="1" price="1500"/>
+		<baseMaterialConfiguration name="Gloss Olive" color="0.07819 0.12214 0.02122" material="33" price="1500"/>
+		<baseMaterialConfiguration name="Kandy Olive" color="0.07819 0.12214 0.02122" material="3" price="1500"/>
+		<baseMaterialConfiguration name="Olive Chrome" color="0.07819 0.12214 0.02122" material="2" price="1500"/>
+		<baseMaterialConfiguration name="Galvanized Olive" color="0.07819 0.12214 0.02122" material="4" price="1500"/>
+		<baseMaterialConfiguration name="Satin Olive" color="0.07819 0.12214 0.02122" material="27" price="1500"/>
+		<baseMaterialConfiguration name="Reflective Olive" color="0.07819 0.12214 0.02122" material="20" price="1500"/>
         <material name="_mat" shaderParameter="colorMat0"/>
         <material name="_mat" shaderParameter="colorMat7"/>
     </baseMaterialConfigurations>
 
-    <designMaterialConfigurations price="2000" useDefaultColors="true">
+    <designMaterialConfigurations price="1000" useDefaultColors="true">
         <designMaterialConfiguration name="WHITE" color="SHARED_WHITE2"/>
-        <designMaterialConfiguration name="WHITE MATTE" color="SHARED_WHITE2" material="1" price="3000"/>
-        <designMaterialConfiguration name="TAN MATTE" color="KRONE_YELLOW1" material="1" price="3000"/>
-        <designMaterialConfiguration name="BLACK MATTE" color="SHARED_BLACK2" material="1" price="3000"/>
-        <designMaterialConfiguration name="RED MATTE" color="CASEIH_RED1" material="1" price="3000"/>
-        <designMaterialConfiguration name="BLUE MATTE" color="NEWHOLLAND_BLUE1" material="1" price="3000"/>
-        <designMaterialConfiguration name="GREEN MATTE" color="JOHNDEERE_GREEN1" material="1" price="3000"/>
-        <designMaterialConfiguration name="OLIVE MATTE" color="0.07819 0.12214 0.02122 1" material="1" price="3000"/>
-        <designMaterialConfiguration name="BROWN MATTE" color="0.16827 0.06663 0.0319 1" material="1" price="3000"/>
-        <designMaterialConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="3000"/>
-        <designMaterialConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="3000"/>
+        <designMaterialConfiguration name="Matte White" color="SHARED_WHITE2" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss White" color="SHARED_WHITE2" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy White" color="SHARED_WHITE2" material="3" price="1000"/>
+		<designMaterialConfiguration name="Chrome" color="1 1 1" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized White" color="SHARED_WHITE2" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin White" color="SHARED_WHITE2" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective White" color="SHARED_WHITE2" material="20" price="1000"/>
+		<designMaterialConfiguration name="Gray" color="SHARED_GREY5" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Gray" color="SHARED_GREY5" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Gray" color="SHARED_GREY5" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Gray" color="SHARED_GREY5" material="3" price="1000"/>
+		<designMaterialConfiguration name="Gray Chrome" color="SHARED_GREY5" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized" color="SHARED_GREY5" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Gray" color="SHARED_GREY5" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Gray" color="SHARED_GREY5" material="20" price="1000"/>
+		<designMaterialConfiguration name="Black" color="SHARED_BLACK2" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Black" color="SHARED_BLACK2" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Black" color="SHARED_BLACK2" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Black" color="SHARED_BLACK2" material="3" price="1000"/>
+		<designMaterialConfiguration name="Black Chrome" color="SHARED_BLACK2" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized Black" color="SHARED_BLACK2" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Black" color="SHARED_BLACK2" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Black" color="SHARED_BLACK2" material="20" price="1000"/>
+		<designMaterialConfiguration name="Tan" color="0.39676 0.3564 0.26225" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Tan" color="0.39676 0.3564 0.26225" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Tan" color="0.39676 0.3564 0.26225" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Tan" color="0.39676 0.3564 0.26225" material="3" price="1000"/>
+		<designMaterialConfiguration name="Tan Chrome" color="0.39676 0.3564 0.26225" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized Tan" color="0.39676 0.3564 0.26225" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Tan" color="0.39676 0.3564 0.26225" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Tan" color="0.39676 0.3564 0.26225" material="20" price="1000"/>
+		<designMaterialConfiguration name="Brown" color="0.16827 0.06663 0.0319" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Brown" color="0.16827 0.06663 0.0319" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Brown" color="0.16827 0.06663 0.0319" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Brown" color="0.16827 0.06663 0.0319" material="3" price="1000"/>
+		<designMaterialConfiguration name="Brown Chrome" color="0.16827 0.06663 0.0319" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized Brown" color="0.16827 0.06663 0.0319" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Brown" color="0.16827 0.06663 0.0319" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Brown" color="0.16827 0.06663 0.0319" material="20" price="1000"/>
+		<designMaterialConfiguration name="Red" color="CASEIH_RED1" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Red" color="CASEIH_RED1" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Red" color="CASEIH_RED1" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Red" color="CASEIH_RED1" material="3" price="1000"/>
+		<designMaterialConfiguration name="Red Chrome" color="CASEIH_RED1" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized Red" color="CASEIH_RED1" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Red" color="CASEIH_RED1" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Red" color="CASEIH_RED1" material="20" price="1000"/>
+		<designMaterialConfiguration name="Orange" color="STARA_ORANGE" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Orange" color="STARA_ORANGE" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Orange" color="STARA_ORANGE" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Orange" color="STARA_ORANGE" material="3" price="1000"/>
+		<designMaterialConfiguration name="Orange Chrome" color="STARA_ORANGE" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized Orange" color="STARA_ORANGE" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Orange" color="STARA_ORANGE" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Orange" color="STARA_ORANGE" material="20" price="1000"/>
+		<designMaterialConfiguration name="Yellow" color="JOHNDEERE_YELLOW1" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Yellow" color="JOHNDEERE_YELLOW1" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Yellow" color="JOHNDEERE_YELLOW1" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Yellow" color="JOHNDEERE_YELLOW1" material="3" price="1000"/>
+		<designMaterialConfiguration name="Yellow Chrome" color="JOHNDEERE_YELLOW1" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized Yellow" color="JOHNDEERE_YELLOW1" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Yellow" color="JOHNDEERE_YELLOW1" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Yellow" color="JOHNDEERE_YELLOW1" material="20" price="1000"/>
+		<designMaterialConfiguration name="Green" color="JOHNDEERE_GREEN1" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Green" color="JOHNDEERE_GREEN1" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Green" color="JOHNDEERE_GREEN1" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Green" color="JOHNDEERE_GREEN1" material="3" price="1000"/>
+		<designMaterialConfiguration name="Green Chrome" color="JOHNDEERE_GREEN1" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized Green" color="JOHNDEERE_GREEN1" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Green" color="JOHNDEERE_GREEN1" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Green" color="JOHNDEERE_GREEN1" material="20" price="1000"/>
+		<designMaterialConfiguration name="Blue" color="NEWHOLLAND_BLUE1" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Blue" color="NEWHOLLAND_BLUE1" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Blue" color="NEWHOLLAND_BLUE1" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Blue" color="NEWHOLLAND_BLUE1" material="3" price="1000"/>
+		<designMaterialConfiguration name="Blue Chrome" color="NEWHOLLAND_BLUE1" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized Blue" color="NEWHOLLAND_BLUE1" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Blue" color="NEWHOLLAND_BLUE1" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Blue" color="NEWHOLLAND_BLUE1" material="20" price="1000"/>
+		<designMaterialConfiguration name="Indigo" color="0 0 0.13287" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Indigo" color="0 0 0.13287" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Indigo" color="0 0 0.13287" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Indigo" color="0 0 0.13287" material="3" price="1000"/>
+		<designMaterialConfiguration name="Indigo Chrome" color="0 0 0.13287" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized Indigo" color="0 0 0.13287" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Indigo" color="0 0 0.13287" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Indigo" color="0 0 0.13287" material="20" price="1000"/>
+		<designMaterialConfiguration name="Violet" color="0.45079 0.00972 1" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Violet" color="0.45079 0.00972 1" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Violet" color="0.45079 0.00972 1" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Violet" color="0.45079 0.00972 1" material="3" price="1000"/>
+		<designMaterialConfiguration name="Violet Chrome" color="0.45079 0.00972 1" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized Violet" color="0.45079 0.00972 1" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Violet" color="0.45079 0.00972 1" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Violet" color="0.45079 0.00972 1" material="20" price="1000"/>
+		<designMaterialConfiguration name="Matte Pink" color="1 0.00972 1" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Pink" color="1 0.00972 1" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Pink" color="1 0.00972 1" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Pink" color="1 0.00972 1" material="3" price="1000"/>
+		<designMaterialConfiguration name="Pink Chrome" color="1 0.00972 1" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized Pink" color="1 0.00972 1" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Pink" color="1 0.00972 1" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Pink" color="1 0.00972 1" material="20" price="1000"/>
+		<designMaterialConfiguration name="Matte Olive" color="0.07819 0.12214 0.02122" material="0" price="1000"/>
+		<designMaterialConfiguration name="Matte Olive" color="0.07819 0.12214 0.02122" material="1" price="1000"/>
+		<designMaterialConfiguration name="Gloss Olive" color="0.07819 0.12214 0.02122" material="33" price="1000"/>
+		<designMaterialConfiguration name="Kandy Olive" color="0.07819 0.12214 0.02122" material="3" price="1000"/>
+		<designMaterialConfiguration name="Olive Chrome" color="0.07819 0.12214 0.02122" material="2" price="1000"/>
+		<designMaterialConfiguration name="Galvanized Olive" color="0.07819 0.12214 0.02122" material="4" price="1000"/>
+		<designMaterialConfiguration name="Satin Olive" color="0.07819 0.12214 0.02122" material="27" price="1000"/>
+		<designMaterialConfiguration name="Reflective Olive" color="0.07819 0.12214 0.02122" material="20" price="1000"/>
         <material name="_mat" shaderParameter="colorMat1"/>
     </designMaterialConfigurations>
 
     <rimColorConfigurations useDefaultColors="true" price="500">
-        <rimColorConfiguration name="WHITE" color="SHARED_WHITE2"/>
-        <rimColorConfiguration name="WHITE MATTE" color="SHARED_WHITE2" material="1" price="750"/>
-        <rimColorConfiguration name="TAN MATTE" color="KRONE_YELLOW1" material="1" price="750"/>
-        <rimColorConfiguration name="BLACK MATTE" color="SHARED_BLACK2" material="1" price="750"/>
-        <rimColorConfiguration name="RED MATTE" color="CASEIH_RED1" material="1" price="750"/>
-        <rimColorConfiguration name="BLUE MATTE" color="NEWHOLLAND_BLUE1" material="1" price="750"/>
-        <rimColorConfiguration name="GREEN MATTE" color="JOHNDEERE_GREEN1" material="1" price="750"/>
-        <rimColorConfiguration name="OLIVE MATTE" color="0.07819 0.12214 0.02122 1" material="1" price="750"/>
-        <rimColorConfiguration name="BROWN MATTE" color="0.16827 0.06663 0.0319 1" material="1" price="750"/>
-        <rimColorConfiguration name="YELLOW MATTE" color="JOHNDEERE_YELLOW1" material="1" price="750"/>
-        <rimColorConfiguration name="ORANGE MATTE" color="STARA_ORANGE" material="1" price="750"/>
+        <rimColorConfiguration name="White" color="SHARED_WHITE2"/>
+        <rimColorConfiguration name="Matte White" color="SHARED_WHITE2" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss White" color="SHARED_WHITE2" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy White" color="SHARED_WHITE2" material="3" price="500"/>
+		<rimColorConfiguration name="Chrome" color="1 1 1" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized White" color="SHARED_WHITE2" material="4" price="500"/>
+		<rimColorConfiguration name="Satin White" color="SHARED_WHITE2" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective White" color="SHARED_WHITE2" material="20" price="500"/>
+		<rimColorConfiguration name="Gray" color="SHARED_GREY5" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Gray" color="SHARED_GREY5" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Gray" color="SHARED_GREY5" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Gray" color="SHARED_GREY5" material="3" price="500"/>
+		<rimColorConfiguration name="Gray Chrome" color="SHARED_GREY5" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized" color="SHARED_GREY5" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Gray" color="SHARED_GREY5" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Gray" color="SHARED_GREY5" material="20" price="500"/>
+		<rimColorConfiguration name="Black" color="SHARED_BLACK2" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Black" color="SHARED_BLACK2" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Black" color="SHARED_BLACK2" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Black" color="SHARED_BLACK2" material="3" price="500"/>
+		<rimColorConfiguration name="Black Chrome" color="SHARED_BLACK2" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized Black" color="SHARED_BLACK2" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Black" color="SHARED_BLACK2" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Black" color="SHARED_BLACK2" material="20" price="500"/>
+		<rimColorConfiguration name="Tan" color="0.39676 0.3564 0.26225" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Tan" color="0.39676 0.3564 0.26225" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Tan" color="0.39676 0.3564 0.26225" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Tan" color="0.39676 0.3564 0.26225" material="3" price="500"/>
+		<rimColorConfiguration name="Tan Chrome" color="0.39676 0.3564 0.26225" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized Tan" color="0.39676 0.3564 0.26225" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Tan" color="0.39676 0.3564 0.26225" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Tan" color="0.39676 0.3564 0.26225" material="20" price="500"/>
+		<rimColorConfiguration name="Brown" color="0.16827 0.06663 0.0319" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Brown" color="0.16827 0.06663 0.0319" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Brown" color="0.16827 0.06663 0.0319" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Brown" color="0.16827 0.06663 0.0319" material="3" price="500"/>
+		<rimColorConfiguration name="Brown Chrome" color="0.16827 0.06663 0.0319" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized Brown" color="0.16827 0.06663 0.0319" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Brown" color="0.16827 0.06663 0.0319" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Brown" color="0.16827 0.06663 0.0319" material="20" price="500"/>
+		<rimColorConfiguration name="Red" color="CASEIH_RED1" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Red" color="CASEIH_RED1" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Red" color="CASEIH_RED1" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Red" color="CASEIH_RED1" material="3" price="500"/>
+		<rimColorConfiguration name="Red Chrome" color="CASEIH_RED1" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized Red" color="CASEIH_RED1" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Red" color="CASEIH_RED1" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Red" color="CASEIH_RED1" material="20" price="500"/>
+		<rimColorConfiguration name="Orange" color="STARA_ORANGE" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Orange" color="STARA_ORANGE" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Orange" color="STARA_ORANGE" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Orange" color="STARA_ORANGE" material="3" price="500"/>
+		<rimColorConfiguration name="Orange Chrome" color="STARA_ORANGE" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized Orange" color="STARA_ORANGE" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Orange" color="STARA_ORANGE" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Orange" color="STARA_ORANGE" material="20" price="500"/>
+		<rimColorConfiguration name="Yellow" color="JOHNDEERE_YELLOW1" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Yellow" color="JOHNDEERE_YELLOW1" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Yellow" color="JOHNDEERE_YELLOW1" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Yellow" color="JOHNDEERE_YELLOW1" material="3" price="500"/>
+		<rimColorConfiguration name="Yellow Chrome" color="JOHNDEERE_YELLOW1" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized Yellow" color="JOHNDEERE_YELLOW1" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Yellow" color="JOHNDEERE_YELLOW1" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Yellow" color="JOHNDEERE_YELLOW1" material="20" price="500"/>
+		<rimColorConfiguration name="Green" color="JOHNDEERE_GREEN1" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Green" color="JOHNDEERE_GREEN1" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Green" color="JOHNDEERE_GREEN1" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Green" color="JOHNDEERE_GREEN1" material="3" price="500"/>
+		<rimColorConfiguration name="Green Chrome" color="JOHNDEERE_GREEN1" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized Green" color="JOHNDEERE_GREEN1" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Green" color="JOHNDEERE_GREEN1" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Green" color="JOHNDEERE_GREEN1" material="20" price="500"/>
+		<rimColorConfiguration name="Blue" color="NEWHOLLAND_BLUE1" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Blue" color="NEWHOLLAND_BLUE1" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Blue" color="NEWHOLLAND_BLUE1" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Blue" color="NEWHOLLAND_BLUE1" material="3" price="500"/>
+		<rimColorConfiguration name="Blue Chrome" color="NEWHOLLAND_BLUE1" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized Blue" color="NEWHOLLAND_BLUE1" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Blue" color="NEWHOLLAND_BLUE1" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Blue" color="NEWHOLLAND_BLUE1" material="20" price="500"/>
+		<rimColorConfiguration name="Indigo" color="0 0 0.13287" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Indigo" color="0 0 0.13287" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Indigo" color="0 0 0.13287" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Indigo" color="0 0 0.13287" material="3" price="500"/>
+		<rimColorConfiguration name="Indigo Chrome" color="0 0 0.13287" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized Indigo" color="0 0 0.13287" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Indigo" color="0 0 0.13287" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Indigo" color="0 0 0.13287" material="20" price="500"/>
+		<rimColorConfiguration name="Violet" color="0.45079 0.00972 1" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Violet" color="0.45079 0.00972 1" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Violet" color="0.45079 0.00972 1" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Violet" color="0.45079 0.00972 1" material="3" price="500"/>
+		<rimColorConfiguration name="Violet Chrome" color="0.45079 0.00972 1" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized Violet" color="0.45079 0.00972 1" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Violet" color="0.45079 0.00972 1" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Violet" color="0.45079 0.00972 1" material="20" price="500"/>
+		<rimColorConfiguration name="Matte Pink" color="1 0.00972 1" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Pink" color="1 0.00972 1" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Pink" color="1 0.00972 1" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Pink" color="1 0.00972 1" material="3" price="500"/>
+		<rimColorConfiguration name="Pink Chrome" color="1 0.00972 1" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized Pink" color="1 0.00972 1" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Pink" color="1 0.00972 1" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Pink" color="1 0.00972 1" material="20" price="500"/>
+		<rimColorConfiguration name="Matte Olive" color="0.07819 0.12214 0.02122" material="0" price="500"/>
+		<rimColorConfiguration name="Matte Olive" color="0.07819 0.12214 0.02122" material="1" price="500"/>
+		<rimColorConfiguration name="Gloss Olive" color="0.07819 0.12214 0.02122" material="33" price="500"/>
+		<rimColorConfiguration name="Kandy Olive" color="0.07819 0.12214 0.02122" material="3" price="500"/>
+		<rimColorConfiguration name="Olive Chrome" color="0.07819 0.12214 0.02122" material="2" price="500"/>
+		<rimColorConfiguration name="Galvanized Olive" color="0.07819 0.12214 0.02122" material="4" price="500"/>
+		<rimColorConfiguration name="Satin Olive" color="0.07819 0.12214 0.02122" material="27" price="500"/>
+		<rimColorConfiguration name="Reflective Olive" color="0.07819 0.12214 0.02122" material="20" price="500"/>
     </rimColorConfigurations>
 
     <designConfigurations>
